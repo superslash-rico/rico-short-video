@@ -45,17 +45,29 @@
       "page_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
       "version": "2.5.7",
       "ratio": "9:16",
-      "observed_on": "2026-10-16",
-      "status": "actual_preview_comparison",
-      "evidence_level": "official_runtime_seven_stills",
-      "next_check": "其他内容入选后再验证完整合成；本条纸面更匹配已有素材",
-      "local_render_verified": "seven_stills_only",
-      "chatcut_interchange_verified": false,
-      "alpha_verified": false,
-      "user_style_approved": false,
+      "observed_on": "2026-10-17",
+      "status": "used_in_completed_screen_explainer_v2",
+      "evidence_level": "official_module_renders_final_chatcut_mp4_and_user_completion",
+      "next_check": "同类拍屏可复用已验证模块与交接；按新文字/配色/布局检查去底、入出场和遮挡，新格式与新能力另测",
+      "local_render_verified": true,
+      "chatcut_interchange_verified": true,
+      "alpha_verified": true,
+      "user_style_approved": true,
       "evidence_files": [
-        "references/data/first-video-case.json"
-      ]
+        "references/data/first-video-case.json",
+        "references/data/first-screen-case.json"
+      ],
+      "alpha_verification_scope": "仅普通渲染去底、细描边后VP9 alpha WebM导入ChatCut及H.264实际输出；不是模板原生alpha",
+      "native_alpha_output_verified": false,
+      "user_style_approval_scope": "首条手机单源拍屏V2整体用户认可并宣布完成；不代表模板全部控件、配色或固定动画密度已成为永久系列标准",
+      "component_observations": {
+        "title_keyword_list_steps": "5个模块独立渲染，13个透明实例合入约99.17秒完整拍屏成片",
+        "keyword_palette": "light浅底亮字直接去亮底会丢字，本次dark亮字去暗底加深描边；不推导所有主题均相同",
+        "list_and_workflow": "黑字浅底按亮底去色、细浅描边；状态和步骤只展示当前项",
+        "native_presenter": "本条不适用，未验证",
+        "native_alpha": "本条未验证；alpha_verified仅指外部去底后的素材交接"
+      },
+      "selection_hypothesis": "真实软件操作、状态提醒、关键词及流程的已实用候选"
     },
     {
       "record_id": "adunext-template-02-expanded-portrait-2.5.7",
@@ -100,5 +112,11 @@
       ]
     }
   ],
-  "approved_series_styles": []
+  "approved_series_styles": [],
+  "updated_on": "2026-10-17",
+  "limitations": [
+    "案例通过范围按模板、版本、画幅和具体能力读取，用户认可不转授素材或账户权限",
+    "现代图文2.5.7验证的是普通图形去底后的VP9 alpha导入和实际输出；模板原生alpha未验证",
+    "其他模板、双源同步、画面修复和制作效率提升比例不继承此通过结论"
+  ]
 }

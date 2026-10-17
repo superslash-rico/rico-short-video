@@ -1,7 +1,7 @@
 {
-  "schema_version": 4,
+  "schema_version": 5,
   "template_only": true,
-  "usage": "由助手据实际原片和工程填写，生产清单移除scene_record_template并设置template_only=false。v4按露脸/拍屏/混合记录规则适用区间和操作锚点；人物专用检查不适用时写not_applicable及原因。旧v1/v2/v3可读，不强制迁移旧片。此清单是制作记录，不是ChatCut/MotionGit原生API。",
+  "usage": "由助手据实际原片和工程填写，生产清单移除scene_record_template并设置template_only=false。v5补充录制方式、屏幕保护区、真实设备声音和alpha制作路线；仅填写实际适用段并引用主分镜，不要求用户填表。旧v1—v4可读，不强制迁移已归档视频；此清单不是原生工具API。",
   "master": {
     "editor": "ChatCut",
     "project_id": null,
@@ -28,7 +28,8 @@
     },
     "input_mode": null,
     "source_assessment_reference": null,
-    "entry_path": null
+    "entry_path": null,
+    "capture_method": null
   },
   "scenes": [],
   "scene_record_template": {
@@ -89,7 +90,8 @@
       "captions_included": null,
       "separate_sfx_file_and_anchor": null,
       "license_receipt": null,
-      "revision": null
+      "revision": null,
+      "alpha_production_method": null
     },
     "checks": {
       "presenter_continuity": "not_checked",
@@ -110,7 +112,9 @@
       "roi_follows_actual_target": "not_checked",
       "multi_source_sync_if_used": "not_checked",
       "wait_edit_and_disclosure_if_used": "not_checked",
-      "same_time_screen_background_if_used": "not_checked"
+      "same_time_screen_background_if_used": "not_checked",
+      "critical_screen_content_unobscured": "not_checked",
+      "real_device_audio_if_relevant": "not_checked"
     },
     "background_layers": {
       "mode": null,
@@ -145,6 +149,12 @@
         "same_page_state_and_result_evidence": null,
         "captured_later_or_reenacted": null,
         "disclosure_if_needed": null
+      },
+      "protected_regions": [],
+      "real_device_audio": {
+        "treatment": null,
+        "master_range_frames": null,
+        "reason": null
       }
     }
   },
@@ -166,6 +176,14 @@
     "assessment": "制作状态保存主判断、素材角色与可用区间，本清单引用而不另造冲突判断；混合按镜头填source_mode",
     "screen_anchor_fields": "每项锚点据实际事件记录event、source_material_id、source_time_seconds、master_frame、spoken_anchor和evidence_reference，不把示例字段当工具参数",
     "roi_keyframes": "需要时记录source_time_seconds、source_roi_xyxy_pixels及master_frame；坐标指实际源帧，不假设手持画面固定",
-    "applicability": "不适用检查写not_applicable并在not_applicable_reasons中记录原因；适用但未检查保持not_checked，不能假填passed"
+    "applicability": "不适用检查写not_applicable并在not_applicable_reasons中记录原因；适用但未检查保持not_checked，不能假填passed",
+    "capture_methods": [
+      "phone_screen",
+      "screen_recording",
+      "dual_source"
+    ],
+    "protected_regions": "仅在需要的段记录含义、有效主区间、源ROI或主分镜引用、动画让位方式；随手持移动更新，复用现有锚点与坐标，不重复维护冲突时码。",
+    "real_device_audio": "按语义记录preserve/remove/duck等真实处理及理由；现场有信息的播报与无关失败提示分开判断。",
+    "alpha_production_method": "明确native、postprocessed_graphics或none；alpha验证通过不自动证明模板原生alpha。"
   }
 }

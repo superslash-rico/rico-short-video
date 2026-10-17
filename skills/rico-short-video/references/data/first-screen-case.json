@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "case_id": "first-screen-explainer-20261017",
+  "title": "手机拍屏：设备语音提醒与屏幕操作演示",
+  "input_mode": "screen_explainer",
+  "capture_method": "phone_screen",
+  "entry_path": "existing_footage",
+  "material_roles": "同一手机原片包含音箱现场播报、桌面和电脑屏幕操作；无可用露脸主轨或同步电脑录屏",
+  "status": "user_accepted_and_production_task_completed",
+  "source_duration_seconds": 129.993333,
+  "final_timeline": {
+    "fps": 30,
+    "width": 1080,
+    "height": 1920,
+    "duration_frames": 2975,
+    "content_duration_seconds": 99.1666666667,
+    "container_duration_seconds": 99.242667,
+    "main_source_segments": 14,
+    "motion_modules": 5,
+    "transparent_instances": 13,
+    "sfx_instances": 11,
+    "native_caption_cards_at_archive": 54
+  },
+  "verified_methods": [
+    {
+      "method": "真实结果开场与事件剪辑",
+      "evidence": "保留现场任务播报、屏幕共享点击及结果；删除无关配置失败提示与空等；团队共用仍为未来设想"
+    },
+    {
+      "method": "透明短提示按语义分布",
+      "evidence": "一个长白底列表改成四次当前状态；配合开场、关键词、共享提示、流程节点和结尾。具体13次不作为通用数量"
+    },
+    {
+      "method": "仅图形去底后交给ChatCut",
+      "scope": "现代图文竖版2.5.7 / motion-kit 0.3.0，普通渲染、细描边、VP9 alpha WebM、编辑器组合、4.17秒云端H.264短样及最终MP4"
+    },
+    {
+      "method": "现场声音优先",
+      "evidence": "单一原声路径；动画静音；首段设备播报不铺配乐，后续配乐由ChatCut ducking，轻音效按锚点进入"
+    },
+    {
+      "method": "封面与视频人物规则分开",
+      "evidence": "无露脸成片使用已授权真实本人肖像；三比例各自设计并统一上一条系列风格"
+    }
+  ],
+  "observed_failures_and_corrections": [
+    {
+      "issue": "长白底动画卡遮住拍屏",
+      "correction": "改独立透明短提示；关键操作和结果阅读区间让出动画"
+    },
+    {
+      "issue": "浅底亮字关键词直接去亮底会丢字",
+      "correction": "本次改暗底亮字后去暗底并加细深描边；黑字浅底列表/流程采用另一去底方式"
+    },
+    {
+      "issue": "将可见crop框当整帧媒体宽高",
+      "correction": "读取源素材和实例，以实际源尺寸反推完整媒体大小与位置，crop单独处理"
+    },
+    {
+      "issue": "单张浅色产品封面偏离既有系列",
+      "correction": "读取已认可封面，16:9/3:4/4:3分别构图；按用户许可加入本人"
+    }
+  ],
+  "protected_interval_example": {
+    "range_frames": [
+      798,
+      1325
+    ],
+    "semantics": "关键点击、等待反馈与任务结果阅读；无大面积动画",
+    "not_a_fixed_rule_for_future_videos": true
+  },
+  "validation": {
+    "full_decode_frames": 2975,
+    "reviewed_final_keyframes": 16,
+    "cloud_short_and_editor_composites": "passed",
+    "user_overall_acceptance": "explicit",
+    "assistant_continuous_full_playback": "not_performed",
+    "assistant_full_audio_listening": "not_performed",
+    "native_motiongit_alpha_output": "not_tested",
+    "stabilization_perspective_deflicker_tracking": "not_tested",
+    "dual_source_sync": "not_tested",
+    "mixed_mode_real_footage_acceptance": "not_tested",
+    "production_speed_or_conversion_lift": "not_measured"
+  },
+  "restore_limits": [
+    "兼容XML不足以单独恢复放大、字幕和音频过渡",
+    "应分别备份原生时间轴、实例、卡片/词级时码和实际使用媒体",
+    "仅云端音效与本人模板授权需单独确认，不宣称完全脱云或继承维护者本机环境"
+  ],
+  "media_policy": "此摘要不包含私人照片、原片、账号、临时链接或个人模板包；具体次数、位置、声音参数不冻结成所有任务默认值",
+  "evidence_edition": "公开化方法摘要，不含原项目路径、文件清单、账号回执或私人素材；不授予维护者的素材、肖像或平台权限。"
+}

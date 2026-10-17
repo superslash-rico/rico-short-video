@@ -54,7 +54,31 @@
       ]
     },
     "抖音": {
-      "checked_at": "2026-10-17T11:41:36+08:00"
+      "observed_on": "2026-10-17",
+      "title_max_characters_observed": 30,
+      "description_max_characters_observed": 1000,
+      "cover_surfaces": {
+        "竖封面": "3:4",
+        "横封面": "4:3"
+      },
+      "creation_statement_options_observed": [
+        "内容由AI生成",
+        "内容为个人观点或见解",
+        "内容为转载信息",
+        "内容含营销推广信息",
+        "虚构演绎，仅供娱乐",
+        "无需添加自主声明"
+      ],
+      "save_action": "暂存离开",
+      "final_submit_action": "发布",
+      "prepare_in_advance": [
+        "当前MP4",
+        "3:4与4:3封面",
+        "30字以内标题、1000字以内正文与实际话题",
+        "真实制作方式对应声明",
+        "可见范围与立即/定时设置核对"
+      ],
+      "evidence_scope": "完整表单字段观察；不是任何账号登录或自动上传可用的证明。具体平台字段与声明按当前页面核对。"
     },
     "视频号": {
       "checked_at": "2026-10-17T11:41:36+08:00"
