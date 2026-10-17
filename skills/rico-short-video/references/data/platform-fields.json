@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "purpose": "Dated field observations, not current platform guarantees or evidence of any account login.",
+  "platforms": {
+    "B站": {
+      "checked_at": "2026-10-17T11:41:36+08:00",
+      "required_fields_observed": [
+        "封面",
+        "标题",
+        "创作声明",
+        "分区",
+        "标签"
+      ],
+      "title_max_characters_observed": 80,
+      "description_max_characters_observed": 2000,
+      "max_tags_observed": 10,
+      "cover_surfaces": {
+        "首页推荐": "4:3",
+        "个人空间": "16:9"
+      },
+      "creation_statement_options_observed": [
+        "内容无需标注",
+        "含AI生成内容",
+        "含虚构演绎内容",
+        "内容含营销信息",
+        "个人观点，仅供参考",
+        "内容为转载"
+      ],
+      "optional_fan_feed_max_characters_observed": 233,
+      "other_optional_fields_observed": [
+        "定时发布",
+        "合集",
+        "商业推广",
+        "添加水印",
+        "可见范围",
+        "充电设置",
+        "联合投稿",
+        "个性化卡片",
+        "章节管理",
+        "上传字幕",
+        "杜比音效",
+        "Hi-Res无损音质",
+        "互动设置",
+        "粉丝动态",
+        "在个人空间投稿中隐藏"
+      ],
+      "prepare_in_advance": [
+        "当前平台对应片尾的视频文件",
+        "4:3首页推荐与16:9个人空间两张封面",
+        "标题、简介、至多10个相关标签",
+        "根据实际制作方法准备创作声明",
+        "按需要准备粉丝动态短文、合集、可见范围与定时方案",
+        "保留本地字段备份，发布前重新打开草稿核对"
+      ]
+    },
+    "抖音": {
+      "checked_at": "2026-10-17T11:41:36+08:00"
+    },
+    "视频号": {
+      "checked_at": "2026-10-17T11:41:36+08:00"
+    },
+    "小红书": {
+      "checked_at": "2026-10-17T12:01:19+08:00",
+      "title_limit_display_units_observed": 20,
+      "description_max_display_units_observed": 1000,
+      "cover_crop_ratios_observed": [
+        "3:4",
+        "4:3",
+        "1:1"
+      ],
+      "content_type_options_observed": [
+        "虚构演绎，仅供娱乐",
+        "笔记含AI合成内容",
+        "内容包含营销广告",
+        "内容来源声明"
+      ],
+      "topic_preparation": "准备相关话题候选，需在实际话题列表选择实体，避免只贴未关联的井号文字；同名项注意隐藏字符",
+      "prepare_in_advance": [
+        "对应平台片尾的MP4",
+        "平台计数20以内标题",
+        "正文与话题总计1000以内",
+        "3:4封面；其他可选比例按实际需要使用",
+        "真实制作方式对应内容类型声明",
+        "保留本地文案与素材映射；交接时说明浏览器本地草稿位置"
+      ]
+    }
+  }
+}

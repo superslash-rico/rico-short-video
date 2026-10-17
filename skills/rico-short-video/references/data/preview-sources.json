@@ -1,0 +1,867 @@
+{
+  "schema_version": 1,
+  "purpose": "Observed official public URLs only; no third-party media is redistributed. Download is optional and explicit.",
+  "assets": [
+    {
+      "slug": "motiongit-promo-main",
+      "kind": "cover",
+      "url": "https://motiongit.com/media/covers/585/draft-zh-c7db529e9ef8.jpg",
+      "bytes": 54797,
+      "sha256": "c0efaa5fed6f2ab3db9862df99accb84de3242bf0146a32965b6d59ffdb1e09f"
+    },
+    {
+      "slug": "motiongit-promo-main",
+      "kind": "card",
+      "url": "https://media.openaicut.com/previews/585/light-zh-6b874a685362-card.mp4",
+      "bytes": 18041,
+      "sha256": "6b874a68536212c16f4a99d338e8af003f3bac0e07a5623876ec7ba623921250"
+    },
+    {
+      "slug": "motiongit-promo-main",
+      "kind": "full",
+      "url": "https://media.openaicut.com/previews/585/draft-zh-78bba5fd21f6.mp4",
+      "bytes": 38016961,
+      "sha256": "e82ba8aa163b95665eaf4ed9c532b850f70b069f75c02a35b922dd3595e941e2"
+    },
+    {
+      "slug": "motiongit-promo-ink",
+      "kind": "cover",
+      "url": "https://motiongit.com/media/covers/592/quality-zh-666ac61ebd83.jpg",
+      "bytes": 375770,
+      "sha256": "0f2b79fcc5e9be6818483a8e67ee6f29c52fb248f01d5d5fa8942c5b22d822b2"
+    },
+    {
+      "slug": "motiongit-promo-ink",
+      "kind": "card",
+      "url": "https://media.openaicut.com/previews/592/quality-zh-666ac61ebd83-card.mp4",
+      "bytes": 156294,
+      "sha256": "d4df6c2d9ae3cf7441b495c772106a08ff566f41b0fba1e51676f99c486f528c"
+    },
+    {
+      "slug": "motiongit-promo-ink",
+      "kind": "full",
+      "url": "https://media.openaicut.com/previews/592/draft-zh-eba2e4e6f671.mp4",
+      "bytes": 25108969,
+      "sha256": "7a416a28cc47a28fad91bb89514b5b7a9bd931f952111f67856a75c2b70fb4e8"
+    },
+    {
+      "slug": "knowledge-explainer-lightboard",
+      "kind": "cover",
+      "url": "https://motiongit.com/media/covers/593/quality-zh-0dace1aa2dd9.jpg",
+      "bytes": 155128,
+      "sha256": "32484fd3fd92aabcded651280bf0bf3e9a676df36145ea7fa2b9f0d821f48917"
+    },
+    {
+      "slug": "knowledge-explainer-lightboard",
+      "kind": "card",
+      "url": "https://media.openaicut.com/previews/593/quality-zh-0dace1aa2dd9-card.mp4",
+      "bytes": 378467,
+      "sha256": "5394436670323dc454ce758f3bab159d830401c8fb18198609fb254428477bc0"
+    },
+    {
+      "slug": "knowledge-explainer-clay",
+      "kind": "cover",
+      "url": "https://motiongit.com/media/covers/603/quality-zh-9c9eda7804fd.jpg",
+      "bytes": 117474,
+      "sha256": "91f45b75ecfe52883869dcee7e7d056ef60cf3cff05a2c3155ee6df4f6a3ac44"
+    },
+    {
+      "slug": "knowledge-explainer-clay",
+      "kind": "card",
+      "url": "https://media.openaicut.com/previews/603/quality-zh-9c9eda7804fd-card.mp4",
+      "bytes": 358385,
+      "sha256": "69e52cdc7bd04494dc79282f76edfb0096810ac3bc269569367910ad34b204e8"
+    },
+    {
+      "slug": "template-02-expanded",
+      "kind": "cover",
+      "url": "https://motiongit.com/media/covers/607/draft-zh-b7af2ac6dee6.jpg",
+      "bytes": 175949,
+      "sha256": "f55de758a4af0a090f9c2e196e33cd2c588ec333da028e7d60061058046943df"
+    },
+    {
+      "slug": "template-02-expanded",
+      "kind": "card",
+      "url": "https://media.openaicut.com/previews/607/draft-zh-b7af2ac6dee6-card.mp4",
+      "bytes": 46536,
+      "sha256": "3635d8be60e0ea048875931a62562ff5ad124849efd2918959a00dbbe5a3949a"
+    },
+    {
+      "slug": "template-02-expanded",
+      "kind": "full",
+      "url": "https://media.openaicut.com/previews/607/draft-zh-613d68ad449f.mp4",
+      "bytes": 53526558,
+      "sha256": "58ac58b3b4472fe959c2bacd5b0e213a16b1af2714c163cf11d50af65d7dd333"
+    },
+    {
+      "slug": "template-04-dark-console",
+      "kind": "cover",
+      "url": "https://motiongit.com/media/covers/611/draft-zh-65a8230140c1.jpg",
+      "bytes": 123480,
+      "sha256": "cac84cc5b9701303242c22f053d0b6d135eec8d675741f7de406daa713bf162c"
+    },
+    {
+      "slug": "template-04-dark-console",
+      "kind": "card",
+      "url": "https://media.openaicut.com/previews/611/draft-zh-65a8230140c1-card.mp4",
+      "bytes": 50848,
+      "sha256": "f9f48c9f82be1b8f850c13c1bea0876bb6c9ad512d167e01451521832812965a"
+    },
+    {
+      "slug": "template-04-dark-console",
+      "kind": "full",
+      "url": "https://media.openaicut.com/previews/611/draft-zh-144846fc949e.mp4",
+      "bytes": 55701999,
+      "sha256": "ca4da90c4d64f68bb1c58cecd9fa88870c4f188ccd8a4e2be4fd6c21874a30d6"
+    },
+    {
+      "slug": "385712",
+      "kind": "cover",
+      "url": "https://motiongit.com/media/covers/626/0.2.9-open-beta-zh-b81b4798ad6a.jpg",
+      "bytes": 159552,
+      "sha256": "bdaf1a3638b92d8e299ca77670ab55e3387f01124186f80c65a43b5259c9f0b9"
+    },
+    {
+      "slug": "385712",
+      "kind": "card",
+      "url": "https://media.openaicut.com/previews/626/0.2.9-open-beta-zh-b81b4798ad6a-card.mp4",
+      "bytes": 94728,
+      "sha256": "d492a846e1dbeeba53b7b42b57ff45296e2a459f5f8fe4d164a874113c0ae16f"
+    },
+    {
+      "slug": "385712",
+      "kind": "full",
+      "url": "https://media.openaicut.com/previews/626/0.2.9-open-beta-zh-11eae4868d37.mp4",
+      "bytes": 18343208,
+      "sha256": "01c2e0d4a958497c983ebc2d138e8b6feeb6a9bd657ddb01136cb33941fd7e6f"
+    },
+    {
+      "slug": "vibrant-poster-portrait",
+      "kind": "cover",
+      "url": "https://motiongit.com/media/covers/624/draft-zh-01638b2220a1.jpg",
+      "bytes": 140979,
+      "sha256": "b15098be9b593a68e246cd7c8ce67b659297287ce160a9d59adc946f84f47bfc"
+    },
+    {
+      "slug": "vibrant-poster-portrait",
+      "kind": "card",
+      "url": "https://media.openaicut.com/previews/624/draft-zh-01638b2220a1-card.mp4",
+      "bytes": 56617,
+      "sha256": "6bd93401cfa4474a6401a2e7ba7a1b7f151c649110f2067ebc2e960b11b1e8aa"
+    },
+    {
+      "slug": "vibrant-poster-portrait",
+      "kind": "full",
+      "url": "https://media.openaicut.com/previews/624/draft-zh-11cf23913cdd.mp4",
+      "bytes": 24001736,
+      "sha256": "5281c950e69c7a1423ab21d4628c26d14de53f5fe50946a0a2cbe7c0a466758f"
+    },
+    {
+      "slug": "template-01-integrated-portrait",
+      "kind": "cover",
+      "url": "https://motiongit.com/media/covers/606/draft-zh-ceb203a3fa61.jpg",
+      "bytes": 104703,
+      "sha256": "38dbac9d6b49515c7efcca6625733ec863ca57c4097515778b78cea3a7745cf1"
+    },
+    {
+      "slug": "template-01-integrated-portrait",
+      "kind": "card",
+      "url": "https://media.openaicut.com/previews/606/draft-zh-ceb203a3fa61-card.mp4",
+      "bytes": 55342,
+      "sha256": "2d0302a93d31bd2539f6295d3192d5bd387893487b13d534babfa7e5bb1379f8"
+    },
+    {
+      "slug": "template-01-integrated-portrait",
+      "kind": "full",
+      "url": "https://media.openaicut.com/previews/606/draft-zh-9086d86d6129.mp4",
+      "bytes": 11586333,
+      "sha256": "2b610761a626eac24c0ebbce31a21047f43ed83c729b065846d1f52a5449b2c9"
+    },
+    {
+      "slug": "template-01-integrated",
+      "kind": "cover",
+      "url": "https://motiongit.com/media/covers/605/draft-zh-7942d81ce917.jpg",
+      "bytes": 186123,
+      "sha256": "e9741a7cd942dafee299ea86dc6a03d6e90642b4eb88b1d7285c674f66534103"
+    },
+    {
+      "slug": "template-01-integrated",
+      "kind": "card",
+      "url": "https://media.openaicut.com/previews/605/draft-zh-7942d81ce917-card.mp4",
+      "bytes": 86478,
+      "sha256": "cf435c93a66b16d44993e7ae7905d8bbb2acb5ab656a47731028cd7c60309a4e"
+    },
+    {
+      "slug": "template-01-integrated",
+      "kind": "full",
+      "url": "https://media.openaicut.com/previews/605/draft-zh-99e0d21cfdd9.mp4",
+      "bytes": 16673473,
+      "sha256": "298230e2f3b4ee3f41fdc1b33d19787e5f4a5dc5492742d0f332dc3e06397d36"
+    },
+    {
+      "slug": "template-04-dark-console-portrait",
+      "kind": "cover",
+      "url": "https://motiongit.com/media/covers/612/draft-zh-8ff0115c7088.jpg",
+      "bytes": 114200,
+      "sha256": "c74872499915cf759344499febd1f21ad42ea2ae130d32f86070c9746a0672fa"
+    },
+    {
+      "slug": "template-04-dark-console-portrait",
+      "kind": "card",
+      "url": "https://media.openaicut.com/previews/612/draft-zh-8ff0115c7088-card.mp4",
+      "bytes": 44482,
+      "sha256": "27fd367dfbd3f94b0f87423276cef6db77e84ef4dd4ed5856da6fab880aa2bbe"
+    },
+    {
+      "slug": "template-04-dark-console-portrait",
+      "kind": "full",
+      "url": "https://media.openaicut.com/previews/612/draft-zh-fd1705aa758a.mp4",
+      "bytes": 55333094,
+      "sha256": "834b5ae4cb62256320fc58c861a22b9490089b9a41d42bb193b5a7b7a6f46927"
+    },
+    {
+      "slug": "template-05-native-portrait",
+      "kind": "cover",
+      "url": "https://motiongit.com/media/covers/614/draft-zh-3f92eea2b709.jpg",
+      "bytes": 127972,
+      "sha256": "39d0abbec1568a918fa8640df956296569cff344f77f6d64035ed9bd80752203"
+    },
+    {
+      "slug": "template-05-native-portrait",
+      "kind": "card",
+      "url": "https://media.openaicut.com/previews/614/draft-zh-3f92eea2b709-card.mp4",
+      "bytes": 29550,
+      "sha256": "d4161a5fe7159f0ed8632e34370769d2f1062b74fdf437546d72a3ac2ffafa6f"
+    },
+    {
+      "slug": "template-05-native-portrait",
+      "kind": "full",
+      "url": "https://media.openaicut.com/previews/614/draft-zh-6382724d35a0.mp4",
+      "bytes": 51826979,
+      "sha256": "808b6f25ac2a3e523b3a71c714cb268a323b5a354b2bb8c8a6988ecffa58647f"
+    },
+    {
+      "slug": "template-03-native-portrait",
+      "kind": "cover",
+      "url": "https://motiongit.com/media/covers/610/draft-zh-14409c15ade1.jpg",
+      "bytes": 158824,
+      "sha256": "c8cb85e0b99afeae504bc2171dce303dd7447f91e0949fdd12906c6aeadfce64"
+    },
+    {
+      "slug": "template-03-native-portrait",
+      "kind": "card",
+      "url": "https://media.openaicut.com/previews/610/draft-zh-14409c15ade1-card.mp4",
+      "bytes": 44875,
+      "sha256": "bafbb3039b6b638e4b89139bc1aab9183f17591ca005222f040f53590d600b87"
+    },
+    {
+      "slug": "template-03-native-portrait",
+      "kind": "full",
+      "url": "https://media.openaicut.com/previews/610/draft-zh-3200b44b2818.mp4",
+      "bytes": 23393378,
+      "sha256": "9bdf7e8a4a77f921bf121b2b5f7b09931866070309796bf067621fd53859020e"
+    },
+    {
+      "slug": "vibrant-poster",
+      "kind": "cover",
+      "url": "https://motiongit.com/media/covers/623/draft-zh-6b4b2398b532.jpg",
+      "bytes": 141923,
+      "sha256": "b7efd8e18956733fce70eefb35d5238b4eea80bde5a01544a17212b8e1e726c4"
+    },
+    {
+      "slug": "vibrant-poster",
+      "kind": "card",
+      "url": "https://media.openaicut.com/previews/623/draft-zh-6b4b2398b532-card.mp4",
+      "bytes": 42099,
+      "sha256": "aa6ddebf097d4c080b2c065c4c692b225887fa7edf1feeb5fa1e2e2efe2fbfde"
+    },
+    {
+      "slug": "vibrant-poster",
+      "kind": "full",
+      "url": "https://media.openaicut.com/previews/623/draft-zh-e8e43fce1aae.mp4",
+      "bytes": 23892946,
+      "sha256": "4367c22ada7809254ed091b4e52840f5b99e0321a33dc688f950b231fc75d5ab"
+    },
+    {
+      "slug": "template-02-expanded-portrait",
+      "kind": "cover",
+      "url": "https://motiongit.com/media/covers/608/draft-zh-499f0ea3a15e.jpg",
+      "bytes": 100644,
+      "sha256": "92a88a809a3cdda1137cc3ed22cec44f1f58a4d9d1b6928cb5219acd7f6077b6"
+    },
+    {
+      "slug": "template-02-expanded-portrait",
+      "kind": "card",
+      "url": "https://media.openaicut.com/previews/608/draft-zh-499f0ea3a15e-card.mp4",
+      "bytes": 25860,
+      "sha256": "41969dad50443d4ef62550e27d111b67c78ea20f6135546e39a4ffa7df0f0de9"
+    },
+    {
+      "slug": "template-02-expanded-portrait",
+      "kind": "full",
+      "url": "https://media.openaicut.com/previews/608/draft-zh-927e16779f16.mp4",
+      "bytes": 47512069,
+      "sha256": "0fb3c204e0c995d7090c2cefdff5ce40d60e3606a467b52ef4cca8ee13088f7f"
+    },
+    {
+      "slug": "template-05-native",
+      "kind": "cover",
+      "url": "https://motiongit.com/media/covers/613/draft-zh-23a19c51650d.jpg",
+      "bytes": 142132,
+      "sha256": "2da59b101f0f362cbf73abbc88be1e93dfacf1b8a7c553a2906cd6007cb2898b"
+    },
+    {
+      "slug": "template-05-native",
+      "kind": "card",
+      "url": "https://media.openaicut.com/previews/613/draft-zh-23a19c51650d-card.mp4",
+      "bytes": 31755,
+      "sha256": "5e93e8aeeb00223ce852b96bf6ae90313e91a3fb36ea173950a62a5a5216c93a"
+    },
+    {
+      "slug": "template-05-native",
+      "kind": "full",
+      "url": "https://media.openaicut.com/previews/613/draft-zh-9454c905098e.mp4",
+      "bytes": 58981085,
+      "sha256": "34f2243da6d4e1893ed59d42a99b070149368d409fb0feeaf15eab05dec5ae2c"
+    },
+    {
+      "slug": "motiongit-promo-velocity",
+      "kind": "cover",
+      "url": "https://motiongit.com/media/covers/587/quality-zh-89ff4394136c.jpg",
+      "bytes": 129822,
+      "sha256": "985e178b41ff347b2c5af432434b4ad1c3daa470724e84f66000095cee478307"
+    },
+    {
+      "slug": "motiongit-promo-velocity",
+      "kind": "card",
+      "url": "https://media.openaicut.com/previews/587/quality-zh-89ff4394136c-card.mp4",
+      "bytes": 327338,
+      "sha256": "70a6e6675b46146c3750fc766726764bba4dc84503e176de4214d3844a1b5275"
+    },
+    {
+      "slug": "motiongit-promo-velocity",
+      "kind": "full",
+      "url": "https://media.openaicut.com/previews/587/draft-zh-89b65ccfd5ce.mp4",
+      "bytes": 28145954,
+      "sha256": "33f2b85fdcedb5f6be81b7b0ce896a38335ef3ba44b23373f68dd7396d817f54"
+    },
+    {
+      "slug": "template-03-native",
+      "kind": "cover",
+      "url": "https://motiongit.com/media/covers/609/draft-zh-0b9cc00ce402.jpg",
+      "bytes": 153038,
+      "sha256": "870709c01c66f7e528f16ebdb215f1c811bbd19296b6c59f877d3ac3af93ad81"
+    },
+    {
+      "slug": "template-03-native",
+      "kind": "card",
+      "url": "https://media.openaicut.com/previews/609/draft-zh-0b9cc00ce402-card.mp4",
+      "bytes": 43911,
+      "sha256": "00ceb469461cae7c63f86e7a4b9de1dff6150d161d15c32361a510e03d1f625c"
+    },
+    {
+      "slug": "template-03-native",
+      "kind": "full",
+      "url": "https://media.openaicut.com/previews/609/draft-zh-a33d6dc67131.mp4",
+      "bytes": 26458839,
+      "sha256": "196fecfaadae37056f5fa26a3c706aa4291e089283f58ac79159d0b7d0cad361"
+    },
+    {
+      "slug": "motiongit-promo-pixel",
+      "kind": "cover",
+      "url": "https://motiongit.com/media/covers/586/quality-zh-086e631771b2.jpg",
+      "bytes": 159756,
+      "sha256": "34c1f55f75c8ab87a9a1029751056928c2222b9dc54dd6e1995008c9a0837a6e"
+    },
+    {
+      "slug": "motiongit-promo-pixel",
+      "kind": "card",
+      "url": "https://media.openaicut.com/previews/586/quality-zh-086e631771b2-card.mp4",
+      "bytes": 166811,
+      "sha256": "68dd4c72543d77b187dc2da3df8823c574f307b2ce3a6b7bf4b2325e3cf8ce73"
+    },
+    {
+      "slug": "motiongit-promo-pixel",
+      "kind": "full",
+      "url": "https://media.openaicut.com/previews/586/draft-zh-b8792f9887ad.mp4",
+      "bytes": 12931132,
+      "sha256": "6728d1abfc0cf8a7ad3554a754ffba42208593e0619c288ee92ea520bcd5da5e"
+    },
+    {
+      "slug": "knowledge-explainer-metro",
+      "kind": "cover",
+      "url": "https://motiongit.com/media/covers/604/quality-zh-7a5fb8923fb6.jpg",
+      "bytes": 218252,
+      "sha256": "903927dcabed96933aa9e7879c8b71f8ca36e8444d0e4c06661b10aef465ef93"
+    },
+    {
+      "slug": "knowledge-explainer-metro",
+      "kind": "card",
+      "url": "https://media.openaicut.com/previews/604/quality-zh-7a5fb8923fb6-card.mp4",
+      "bytes": 183607,
+      "sha256": "d8db8b726bbdf6102efe427abf43b0a614e8a5146e184a74380f1eb0f747efcd"
+    },
+    {
+      "slug": "knowledge-explainer-riso",
+      "kind": "cover",
+      "url": "https://motiongit.com/media/covers/602/quality-zh-14ec2d740d7e.jpg",
+      "bytes": 475059,
+      "sha256": "c46dfb0461337f1de14787f8363dda3edeeabf8a91366e56731b4ce05287cb4f"
+    },
+    {
+      "slug": "knowledge-explainer-riso",
+      "kind": "card",
+      "url": "https://media.openaicut.com/previews/602/quality-zh-14ec2d740d7e-card.mp4",
+      "bytes": 617420,
+      "sha256": "e9f30544995ee0deaf295b87209430eb672598f5d0d5dfca0ff2dfc60689592f"
+    },
+    {
+      "slug": "knowledge-explainer-timeline",
+      "kind": "cover",
+      "url": "https://motiongit.com/media/covers/601/quality-zh-81ef8aa9c887.jpg",
+      "bytes": 315405,
+      "sha256": "7496161baedfd04f761d69c0b472cb5517e56d66cc5528c6dfaa768547581da4"
+    },
+    {
+      "slug": "knowledge-explainer-timeline",
+      "kind": "card",
+      "url": "https://media.openaicut.com/previews/601/quality-zh-81ef8aa9c887-card.mp4",
+      "bytes": 693197,
+      "sha256": "7efe0bb160318c0b15c3f47bc8c7e5b0b8fdc855327f921476e4b1ab1e90ed10"
+    },
+    {
+      "slug": "knowledge-explainer-mindmap",
+      "kind": "cover",
+      "url": "https://motiongit.com/media/covers/600/quality-zh-f9fac59c7e94.jpg",
+      "bytes": 126449,
+      "sha256": "9062430fc85fda439322c372e2d0a16fc9f045e7d138dc68d51b1904b180b968"
+    },
+    {
+      "slug": "knowledge-explainer-mindmap",
+      "kind": "card",
+      "url": "https://media.openaicut.com/previews/600/quality-zh-f9fac59c7e94-card.mp4",
+      "bytes": 253402,
+      "sha256": "b354bbea2627d444ff1c60044955322ea8b3477329ed2db5d3c971e58925425d"
+    },
+    {
+      "slug": "knowledge-explainer-chalkboard",
+      "kind": "cover",
+      "url": "https://motiongit.com/media/covers/599/quality-zh-1580f89ea24e.jpg",
+      "bytes": 381443,
+      "sha256": "aab3a038b500a79291041f4ffdf3383f263349d7d5385f79f648d30c0ef10b5f"
+    },
+    {
+      "slug": "knowledge-explainer-chalkboard",
+      "kind": "card",
+      "url": "https://media.openaicut.com/previews/599/quality-zh-1580f89ea24e-card.mp4",
+      "bytes": 121880,
+      "sha256": "101062d917b27057f59d5e7aaa484d2cc22d4e935784fe1238b90293c5ab1e25"
+    },
+    {
+      "slug": "knowledge-explainer-papercut",
+      "kind": "cover",
+      "url": "https://motiongit.com/media/covers/598/quality-zh-57b8a67e8d76.jpg",
+      "bytes": 260576,
+      "sha256": "87c5ce557e68a69de55ec1c8a549486e49893283e8c8337121eda783da60795f"
+    },
+    {
+      "slug": "knowledge-explainer-papercut",
+      "kind": "card",
+      "url": "https://media.openaicut.com/previews/598/quality-zh-57b8a67e8d76-card.mp4",
+      "bytes": 556451,
+      "sha256": "d44cd347154d613cf84258297578de3e5c3a8dfafc2b8bae8b463efde90fea29"
+    },
+    {
+      "slug": "knowledge-explainer-isometric",
+      "kind": "cover",
+      "url": "https://motiongit.com/media/covers/597/quality-zh-d17d42115ebd.jpg",
+      "bytes": 191505,
+      "sha256": "106035036e490544ce8112df8ab6a171e55be64dda49606af7720b0ff6db2aca"
+    },
+    {
+      "slug": "knowledge-explainer-isometric",
+      "kind": "card",
+      "url": "https://media.openaicut.com/previews/597/quality-zh-d17d42115ebd-card.mp4",
+      "bytes": 385248,
+      "sha256": "531309f8b10cf208b9a28d09ca0455268b26d0f8df6f4a451f371df18790776c"
+    },
+    {
+      "slug": "knowledge-explainer-swiss",
+      "kind": "cover",
+      "url": "https://motiongit.com/media/covers/596/quality-zh-fcef4bd1b24e.jpg",
+      "bytes": 163965,
+      "sha256": "8a220852b79a131fdc90ddb488c9e3097f0be4404f434d9fcfcdfb0611bea024"
+    },
+    {
+      "slug": "knowledge-explainer-swiss",
+      "kind": "card",
+      "url": "https://media.openaicut.com/previews/596/quality-zh-fcef4bd1b24e-card.mp4",
+      "bytes": 122662,
+      "sha256": "ff513bc15ec085f8856e91e8fd3d3619566741ae08b1b133c0f5189a5a65bc7c"
+    },
+    {
+      "slug": "knowledge-explainer-byrne",
+      "kind": "cover",
+      "url": "https://motiongit.com/media/covers/595/quality-zh-b1bdd8e5fb07.jpg",
+      "bytes": 174548,
+      "sha256": "107348ae09220d45c44115d4edee00f099c117ed69bb8ff89167a977383877af"
+    },
+    {
+      "slug": "knowledge-explainer-byrne",
+      "kind": "card",
+      "url": "https://media.openaicut.com/previews/595/quality-zh-b1bdd8e5fb07-card.mp4",
+      "bytes": 104002,
+      "sha256": "66ef9f8ea86547a01df739af2fba2276a602f911d87ff25cfb35b3ee7c0d7dd4"
+    },
+    {
+      "slug": "knowledge-explainer-sketchnote",
+      "kind": "cover",
+      "url": "https://motiongit.com/media/covers/594/quality-zh-e7f0d509cf79.jpg",
+      "bytes": 225726,
+      "sha256": "e9c91186039831e1a8e1371c6c82edf9b1f32ac5b45195daa3e26c154faa3e30"
+    },
+    {
+      "slug": "knowledge-explainer-sketchnote",
+      "kind": "card",
+      "url": "https://media.openaicut.com/previews/594/quality-zh-e7f0d509cf79-card.mp4",
+      "bytes": 583791,
+      "sha256": "57082c3dc387a5ebe38fe95ec00f3fa880baff0ffb3357093560cdea9dd10613"
+    },
+    {
+      "slug": "visual-art-a-halftone",
+      "kind": "cover",
+      "url": "https://motiongit.com/media/covers/615/draft-zh-2de1eb992fcf.jpg",
+      "bytes": 646355,
+      "sha256": "a69ef996aa9ec5b8bc56bc8586d2daf95c934231965969964e88178d9ddfa999"
+    },
+    {
+      "slug": "visual-art-a-halftone",
+      "kind": "card",
+      "url": "https://media.openaicut.com/previews/615/draft-zh-2de1eb992fcf-card.mp4",
+      "bytes": 900062,
+      "sha256": "3f9aa0f92e504ef55cff44a3dc33a53381ee2190e95ed8c7d09783e26602ff2f"
+    },
+    {
+      "slug": "visual-art-a-halftone",
+      "kind": "full",
+      "url": "https://media.openaicut.com/previews/615/draft-zh-87b41df4a38a.mp4",
+      "bytes": 34555539,
+      "sha256": "8804e7bd9819703062ffff516af0052ac9a9bc9ebe55e1403d9aee929798c6b6"
+    },
+    {
+      "slug": "visual-art-c-collage",
+      "kind": "cover",
+      "url": "https://motiongit.com/media/covers/617/draft-zh-84c721155840.jpg",
+      "bytes": 258849,
+      "sha256": "108d7e577604cb1571ca62d301fe8e9f8065214baba578b39f7e86f9d80c29e1"
+    },
+    {
+      "slug": "visual-art-c-collage",
+      "kind": "card",
+      "url": "https://media.openaicut.com/previews/617/draft-zh-84c721155840-card.mp4",
+      "bytes": 482988,
+      "sha256": "ccfeca151333e243d6a14ae290286ffe7c7f065db4994801f49d47af1d9cd2b8"
+    },
+    {
+      "slug": "visual-art-c-collage",
+      "kind": "full",
+      "url": "https://media.openaicut.com/previews/617/draft-zh-d014a696e0ba.mp4",
+      "bytes": 14688509,
+      "sha256": "f323f30de72f98ae425ab3759826a221093c968191bb4913c088478551a3bc16"
+    },
+    {
+      "slug": "motiongit-promo-user",
+      "kind": "cover",
+      "url": "https://motiongit.com/media/covers/588/quality-zh-aa230abfebe6.jpg",
+      "bytes": 198402,
+      "sha256": "4aa304f30f449518b5194983752fd5b6088a03540687d4ab7239913e6cd71073"
+    },
+    {
+      "slug": "motiongit-promo-user",
+      "kind": "card",
+      "url": "https://media.openaicut.com/previews/588/quality-zh-aa230abfebe6-card.mp4",
+      "bytes": 533618,
+      "sha256": "5b3a5f18875729700ad19f65fb4d175e2cb8ab4ff191c45dab7c04c7efff101d"
+    },
+    {
+      "slug": "motiongit-promo-user",
+      "kind": "full",
+      "url": "https://media.openaicut.com/previews/588/draft-zh-ca08bac0650e.mp4",
+      "bytes": 17521505,
+      "sha256": "45e2be334a1ec38adb563dcbd19b6d6d7d30c14a56e065739f2c658895518e22"
+    },
+    {
+      "slug": "motiongit-promo-blueprint",
+      "kind": "cover",
+      "url": "https://motiongit.com/media/covers/590/quality-zh-d5509b8e4f82.jpg",
+      "bytes": 246737,
+      "sha256": "b0bead716555cf965470dc2430a3055a4b59748c861869a6e9bc5d424a6bea63"
+    },
+    {
+      "slug": "motiongit-promo-blueprint",
+      "kind": "card",
+      "url": "https://media.openaicut.com/previews/590/quality-zh-d5509b8e4f82-card.mp4",
+      "bytes": 229332,
+      "sha256": "25a0961d91e3e85cbe314ed15ca1c4304a3209723026dddcc67a3ab632b9669d"
+    },
+    {
+      "slug": "motiongit-promo-blueprint",
+      "kind": "full",
+      "url": "https://media.openaicut.com/previews/590/draft-zh-308a5a69232f.mp4",
+      "bytes": 16154208,
+      "sha256": "f95d12684c1630c9a6bee7931a80a674a48d612ead8b5536d80eef26f005eac1"
+    },
+    {
+      "slug": "visual-art-g-gallery",
+      "kind": "cover",
+      "url": "https://motiongit.com/media/covers/621/draft-zh-78b8670e7b7d.jpg",
+      "bytes": 208692,
+      "sha256": "9ca53c451114c6ea0aa747fc9332502d1f4e849fa1167155f864857d273a9f28"
+    },
+    {
+      "slug": "visual-art-g-gallery",
+      "kind": "card",
+      "url": "https://media.openaicut.com/previews/621/draft-zh-78b8670e7b7d-card.mp4",
+      "bytes": 934245,
+      "sha256": "06b1c066a66f8bcd42b737d0d21fa741ae69b90386ad547808fedc063e04f067"
+    },
+    {
+      "slug": "visual-art-g-gallery",
+      "kind": "full",
+      "url": "https://media.openaicut.com/previews/621/draft-zh-13dffcc71ff3.mp4",
+      "bytes": 33802111,
+      "sha256": "77d025c4ece4e5a256fed637279dc402795d19721731c67f08da850f4bf55d9d"
+    },
+    {
+      "slug": "motiongit-promo-keynote",
+      "kind": "cover",
+      "url": "https://motiongit.com/media/covers/591/quality-zh-da4888e5e350.jpg",
+      "bytes": 170476,
+      "sha256": "53595fe95b5032a148b7aba6d8b7adffc9901b445dcc89a6d459f1abf251d9ba"
+    },
+    {
+      "slug": "motiongit-promo-keynote",
+      "kind": "card",
+      "url": "https://media.openaicut.com/previews/591/quality-zh-da4888e5e350-card.mp4",
+      "bytes": 560382,
+      "sha256": "118674cb5e9f3da62b698c175dc56fd5bd5f215e2ec8b44cb1dd3c3d3cd6ff76"
+    },
+    {
+      "slug": "motiongit-promo-keynote",
+      "kind": "full",
+      "url": "https://media.openaicut.com/previews/591/draft-zh-958b2690a669.mp4",
+      "bytes": 39696501,
+      "sha256": "fa931d075615da94231f6d2be015ae26918001219b0b11a4c07a19220c4d9985"
+    },
+    {
+      "slug": "motiongit-promo-creator",
+      "kind": "cover",
+      "url": "https://motiongit.com/media/covers/589/quality-zh-879117ad36da.jpg",
+      "bytes": 119519,
+      "sha256": "18b3beb36f19ebdb0195bcb5e37eb6d789db489d5791de2840c460b3bf1d2688"
+    },
+    {
+      "slug": "motiongit-promo-creator",
+      "kind": "card",
+      "url": "https://media.openaicut.com/previews/589/quality-zh-879117ad36da-card.mp4",
+      "bytes": 186860,
+      "sha256": "26b025ee6d14ef68979fdff68b488555b842a13907351d274f2345c0310d4b54"
+    },
+    {
+      "slug": "motiongit-promo-creator",
+      "kind": "full",
+      "url": "https://media.openaicut.com/previews/589/draft-zh-4d806a380523.mp4",
+      "bytes": 18619819,
+      "sha256": "6a6e8f87f3918e6c88ab87e72230f187d25793a1ea43c4fc0b63a266f81ef940"
+    },
+    {
+      "slug": "visual-art-f-double",
+      "kind": "cover",
+      "url": "https://motiongit.com/media/covers/620/draft-zh-d8cadbd1b296.jpg",
+      "bytes": 147492,
+      "sha256": "ec3240c332d6f92e18341abb65c1285e59d879cce51bc186eb9f6d1f5a9e6a7e"
+    },
+    {
+      "slug": "visual-art-f-double",
+      "kind": "card",
+      "url": "https://media.openaicut.com/previews/620/draft-zh-d8cadbd1b296-card.mp4",
+      "bytes": 359209,
+      "sha256": "5b908a242d29b09d76ae1ec5ccaf9e035f35489dac678f1fc2a50da799d67cea"
+    },
+    {
+      "slug": "visual-art-f-double",
+      "kind": "full",
+      "url": "https://media.openaicut.com/previews/620/draft-zh-eb40eb882b43.mp4",
+      "bytes": 9032799,
+      "sha256": "be60b78856f3da0fd20c59e38bc437b45f0fff726b55e7d19df4de43e386583f"
+    },
+    {
+      "slug": "visual-art-b-mosaic",
+      "kind": "cover",
+      "url": "https://motiongit.com/media/covers/616/draft-zh-b95e73a79f9c.jpg",
+      "bytes": 470908,
+      "sha256": "867f7f1ec1347adfbdae8f3df9ef46c5700a6eeda4df6d49d1004e9f1667ebf0"
+    },
+    {
+      "slug": "visual-art-b-mosaic",
+      "kind": "card",
+      "url": "https://media.openaicut.com/previews/616/draft-zh-b95e73a79f9c-card.mp4",
+      "bytes": 932802,
+      "sha256": "ac3462ae3585c970dcb9bda1fb3e099924fd8408548b081e79f4154d84adf0c5"
+    },
+    {
+      "slug": "visual-art-b-mosaic",
+      "kind": "full",
+      "url": "https://media.openaicut.com/previews/616/draft-zh-3c3bc74e9591.mp4",
+      "bytes": 33432227,
+      "sha256": "dc5d5a4661345ffab7fe01ec60e6bda8bfba1481ec14669be95e198515d245f4"
+    },
+    {
+      "slug": "visual-art-d-brushwork",
+      "kind": "cover",
+      "url": "https://motiongit.com/media/covers/618/draft-zh-c88f1a5a67a8.jpg",
+      "bytes": 325151,
+      "sha256": "fd5a35365ff1d78e8b440eacad120a3f54dd7b3537e0ef50f702d3bf588a84ba"
+    },
+    {
+      "slug": "visual-art-d-brushwork",
+      "kind": "card",
+      "url": "https://media.openaicut.com/previews/618/draft-zh-c88f1a5a67a8-card.mp4",
+      "bytes": 858562,
+      "sha256": "67b473a0d4a152b667b8051a6fee9e3cb10e0ebb456e20c368c3e62033005ab4"
+    },
+    {
+      "slug": "visual-art-d-brushwork",
+      "kind": "full",
+      "url": "https://media.openaicut.com/previews/618/draft-zh-9a122d6aac1e.mp4",
+      "bytes": 22517067,
+      "sha256": "cfee3c7c03d9d93dfdac407dcb9e414561fba17a8a60abdbeeb11f9f4c791a07"
+    },
+    {
+      "slug": "visual-art-e-glitch",
+      "kind": "cover",
+      "url": "https://motiongit.com/media/covers/619/draft-zh-b96f0b6469fe.jpg",
+      "bytes": 595458,
+      "sha256": "30bb905323cca4270043d500b5291c09800e3b82df2f03b9df45687a536bbf59"
+    },
+    {
+      "slug": "visual-art-e-glitch",
+      "kind": "card",
+      "url": "https://media.openaicut.com/previews/619/draft-zh-b96f0b6469fe-card.mp4",
+      "bytes": 918270,
+      "sha256": "708b4f48e24e8ad571bd09c1cfe257deec592bb41be4e2fea1b8ba97b07d96b4"
+    },
+    {
+      "slug": "visual-art-e-glitch",
+      "kind": "full",
+      "url": "https://media.openaicut.com/previews/619/draft-zh-567d566f31a3.mp4",
+      "bytes": 37002871,
+      "sha256": "421a891da54ec5cd601cf66ebdb3dd1b1ed8ce72739266d83ec7ecb4d6975037"
+    },
+    {
+      "slug": "visual-art-h-kaleido",
+      "kind": "cover",
+      "url": "https://motiongit.com/media/covers/622/draft-zh-f09b29170a66.jpg",
+      "bytes": 522894,
+      "sha256": "161d22f62dc71db5df8b4bd51bbe92f0c8f346ba9c68c7707fb1fd88664029d9"
+    },
+    {
+      "slug": "visual-art-h-kaleido",
+      "kind": "card",
+      "url": "https://media.openaicut.com/previews/622/draft-zh-f09b29170a66-card.mp4",
+      "bytes": 821210,
+      "sha256": "805ce80728c0378ef88762fa0c60390983c65b5bfcc11cb816fe902da7d8ea60"
+    },
+    {
+      "slug": "visual-art-h-kaleido",
+      "kind": "full",
+      "url": "https://media.openaicut.com/previews/622/draft-zh-3a7bf4639a39.mp4",
+      "bytes": 22722924,
+      "sha256": "07b989331fedbb7f31b14531e40922687c9b1931babf0f400e3de2c9ca87933b"
+    },
+    {
+      "slug": "deepseek-whale-assemble",
+      "kind": "cover",
+      "url": "https://motiongit.com/media/covers/628/1.1.0-a864a56cec62.jpg",
+      "bytes": 228874,
+      "sha256": "3fde656c02087e1c81bfcd517dc3e61cb3707a0365b3469796660bc1f4b71d7b"
+    },
+    {
+      "slug": "deepseek-whale-assemble",
+      "kind": "card",
+      "url": "https://media.openaicut.com/previews/628/1.1.0-a864a56cec62-card.mp4",
+      "bytes": 71748,
+      "sha256": "b778fdcfa89614f99f8185a900df2121f09ad414df906e61d6da84134dc85f21"
+    },
+    {
+      "slug": "deepseek-whale-assemble",
+      "kind": "full",
+      "url": "https://media.openaicut.com/previews/628/1.1.0-e0d9c9e4a5b8.mp4",
+      "bytes": 7432570,
+      "sha256": "2690e4b540b705ee064551b0583295b1382cc0b0485860c4de9ae9ed3b3b352f"
+    },
+    {
+      "slug": "deepseek-word-morph",
+      "kind": "cover",
+      "url": "https://motiongit.com/media/covers/630/1.1.0-7cf1d6e6ddc9.jpg",
+      "bytes": 115398,
+      "sha256": "935c3b311185611394db8f4b8315d8cc91d6b7db46a4ef01fb8b11efdaa00062"
+    },
+    {
+      "slug": "deepseek-word-morph",
+      "kind": "card",
+      "url": "https://media.openaicut.com/previews/630/1.1.0-7cf1d6e6ddc9-card.mp4",
+      "bytes": 35282,
+      "sha256": "c4bf09665368a0025cbc4d2b0d29bdf9580265d699a3bd8340881b1e466166a8"
+    },
+    {
+      "slug": "deepseek-word-morph",
+      "kind": "full",
+      "url": "https://media.openaicut.com/previews/630/1.1.0-7b16186bd6b2.mp4",
+      "bytes": 3578707,
+      "sha256": "3d5161cb7632607202c212dbcb00e17fda725104e26667617eb8500ca602b3cc"
+    },
+    {
+      "slug": "deepseek-form-morph",
+      "kind": "cover",
+      "url": "https://motiongit.com/media/covers/629/1.1.0-72cc2b4731d0.jpg",
+      "bytes": 118140,
+      "sha256": "e662296325b65d3fb447a3bcf5d3a3a3e5e0b8fd3dbaa6acd73fdc7b7cd642d4"
+    },
+    {
+      "slug": "deepseek-form-morph",
+      "kind": "card",
+      "url": "https://media.openaicut.com/previews/629/1.1.0-72cc2b4731d0-card.mp4",
+      "bytes": 91462,
+      "sha256": "45ff3f75b5c5ce297f788d3c862c03055e24840788cbfaa272bdf43a861ba65f"
+    },
+    {
+      "slug": "deepseek-form-morph",
+      "kind": "full",
+      "url": "https://media.openaicut.com/previews/629/1.1.0-0892fa4bf82d.mp4",
+      "bytes": 5686467,
+      "sha256": "be539615cd1c5414351168f208fecdba935094b941f93f9210ae5c518f4d4be7"
+    },
+    {
+      "slug": "volume-price-kline-charts",
+      "kind": "cover",
+      "url": "https://motiongit.com/media/covers/869/1.0.0-zh-01708b4a2214.jpg",
+      "bytes": 140936,
+      "sha256": "f320209ea5256089151f0c0321fded85e18c4095ba26e4925ffdbb31b4c117d7"
+    },
+    {
+      "slug": "volume-price-kline-charts",
+      "kind": "card",
+      "url": "https://media.openaicut.com/previews/869/1.0.0-zh-01708b4a2214-card.mp4",
+      "bytes": 19716,
+      "sha256": "07cc7cc4847d3d1a0866273ab803a7dc95948bd1e504a1bc8ac90d1a82300371"
+    },
+    {
+      "slug": "volume-price-kline-charts",
+      "kind": "full",
+      "url": "https://media.openaicut.com/previews/869/1.0.0-zh-d5fd83bc28a8.mp4",
+      "bytes": 1307696,
+      "sha256": "2a03b9289e9331bad45e8bca2fe0f7277a2eef2a7e0915ef2e08f7cc83c21147"
+    }
+  ]
+}

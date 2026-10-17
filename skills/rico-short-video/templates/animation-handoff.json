@@ -1,0 +1,171 @@
+{
+  "schema_version": 4,
+  "template_only": true,
+  "usage": "由助手据实际原片和工程填写，生产清单移除scene_record_template并设置template_only=false。v4按露脸/拍屏/混合记录规则适用区间和操作锚点；人物专用检查不适用时写not_applicable及原因。旧v1/v2/v3可读，不强制迁移旧片。此清单是制作记录，不是ChatCut/MotionGit原生API。",
+  "master": {
+    "editor": "ChatCut",
+    "project_id": null,
+    "timeline_id": null,
+    "speech_cut_revision": null,
+    "template_selection_reference": null,
+    "fps": null,
+    "canvas_size": null,
+    "color_space": null,
+    "voice_asset_id": null,
+    "subtitle_reference": null,
+    "approved_style_reference": null,
+    "presenter_opening_rule": {
+      "applies_when": "露脸口播，或混合模式具有可用且匹配内容的真实露脸开场；纯拍屏不适用",
+      "fullscreen_range_frames": null,
+      "duration_seconds": null,
+      "default_duration_seconds": 3,
+      "user_preference_range_seconds": [
+        2,
+        3
+      ],
+      "evidence_reference": null,
+      "applicability_and_reason": null
+    },
+    "input_mode": null,
+    "source_assessment_reference": null,
+    "entry_path": null
+  },
+  "scenes": [],
+  "scene_record_template": {
+    "scene_id": null,
+    "communication_goal": null,
+    "spoken_anchor": null,
+    "master_range_frames": {
+      "start_inclusive": null,
+      "end_exclusive": null
+    },
+    "animation_owner": null,
+    "presenter_layout": {
+      "mode": null,
+      "shape": null,
+      "decision_reason": null,
+      "source_video_material_id": null,
+      "source_crop_reference": null,
+      "start_rect_normalized_xywh": null,
+      "end_rect_normalized_xywh": null,
+      "placement_keyframes": [],
+      "transition": {
+        "type": null,
+        "master_range_frames": {
+          "start_inclusive": null,
+          "end_exclusive": null
+        }
+      },
+      "stable_hold_master_range_frames": null,
+      "protected_regions_reference": null,
+      "capability_evidence_reference": null,
+      "applicability_and_reason": null
+    },
+    "information_rect": null,
+    "caption_safe_rect": null,
+    "source_assets": [
+      {
+        "material_id": null,
+        "path_or_project_asset_id": null,
+        "source_sha256": null,
+        "natural_size": null,
+        "source_start_seconds": null,
+        "source_roi_xyxy_pixels": null,
+        "expected_source_text_or_control": null
+      }
+    ],
+    "animation": {
+      "source_project": null,
+      "template_id_and_version": null,
+      "clip_local_time_origin_seconds": 0,
+      "rendered_file": null,
+      "rendered_sha256": null,
+      "fps": null,
+      "size": null,
+      "duration_frames": null,
+      "codec_and_pixel_format": null,
+      "alpha_status": "unknown",
+      "voice_included": null,
+      "captions_included": null,
+      "separate_sfx_file_and_anchor": null,
+      "license_receipt": null,
+      "revision": null
+    },
+    "checks": {
+      "presenter_continuity": "not_checked",
+      "source_match_and_readability": "not_checked",
+      "import_and_export_alpha_if_used": "not_checked",
+      "timing_and_audio": "not_checked",
+      "final_output": "not_checked",
+      "evidence": [],
+      "presenter_framing_and_protected_regions": "not_checked",
+      "presenter_transition_source_sync": "not_checked",
+      "opening_fullscreen_face_if_applicable": "not_checked",
+      "same_time_presenter_background": "not_checked",
+      "tinted_background_detail_visible": "not_checked",
+      "foreground_skin_untinted": "not_checked",
+      "not_applicable_reasons": {},
+      "screen_event_speech_alignment": "not_checked",
+      "critical_step_and_feedback_preserved": "not_checked",
+      "roi_follows_actual_target": "not_checked",
+      "multi_source_sync_if_used": "not_checked",
+      "wait_edit_and_disclosure_if_used": "not_checked",
+      "same_time_screen_background_if_used": "not_checked"
+    },
+    "background_layers": {
+      "mode": null,
+      "source_video_material_id": null,
+      "source_clock_reference": null,
+      "fit": null,
+      "tint_color": null,
+      "tint_opacity": null,
+      "foreground_kept_untinted": null,
+      "audio_ownership": null,
+      "detail_and_contrast_evidence": []
+    },
+    "source_mode": null,
+    "source_sync_reference": null,
+    "screen_action_context": {
+      "applicability_and_reason": null,
+      "source_material_id": null,
+      "spoken_reference": null,
+      "source_to_master_mapping_reference": null,
+      "action_anchors": [],
+      "required_event_order": [],
+      "source_roi_keyframes": [],
+      "wait_edit": {
+        "source_range_seconds": null,
+        "master_range_frames": null,
+        "treatment": null,
+        "narration_present": null,
+        "disclosure_if_compressed": null
+      },
+      "supplemental_material": {
+        "material_id": null,
+        "same_page_state_and_result_evidence": null,
+        "captured_later_or_reenacted": null,
+        "disclosure_if_needed": null
+      }
+    }
+  },
+  "presenter_layout_conventions": {
+    "rectangles": "[x,y,width,height]相对最终画布归一化，左上为原点；源裁切另引用实际素材坐标",
+    "timing": "主工程绝对帧数，区间左闭右开；必要关键帧填写master_frame与rect_normalized_xywh",
+    "planning": "布局是按镜头填写的编辑决策；窗形、抠像和转场能力须实际验证"
+  },
+  "source_mode_conventions": {
+    "allowed_modes": [
+      "face_talking_head",
+      "screen_explainer",
+      "mixed"
+    ],
+    "entry_paths": [
+      "plan_first",
+      "existing_footage"
+    ],
+    "assessment": "制作状态保存主判断、素材角色与可用区间，本清单引用而不另造冲突判断；混合按镜头填source_mode",
+    "screen_anchor_fields": "每项锚点据实际事件记录event、source_material_id、source_time_seconds、master_frame、spoken_anchor和evidence_reference，不把示例字段当工具参数",
+    "roi_keyframes": "需要时记录source_time_seconds、source_roi_xyxy_pixels及master_frame；坐标指实际源帧，不假设手持画面固定",
+    "applicability": "不适用检查写not_applicable并在not_applicable_reasons中记录原因；适用但未检查保持not_checked，不能假填passed"
+  }
+}

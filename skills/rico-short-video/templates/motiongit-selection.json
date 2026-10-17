@@ -1,0 +1,110 @@
+{
+  "schema_version": 2,
+  "template_only": true,
+  "usage": "由助手据本条实际原片填写，生产记录移除candidate_record_template并设置template_only=false。v2补模式与人物/屏幕门槛适用说明，旧v1仍可读取。null是未知，不是0分或通过；不适用门槛写not_applicable及原因。",
+  "criteria": [
+    {
+      "id": "content_fit",
+      "label": "内容表达",
+      "weight": 25
+    },
+    {
+      "id": "evidence_and_mobile_readability",
+      "label": "真实资料与手机可读性",
+      "weight": 25
+    },
+    {
+      "id": "presenter_and_ip",
+      "label": "人物与IP适配",
+      "weight": 15
+    },
+    {
+      "id": "motion_audio_pacing",
+      "label": "动效声音与节奏",
+      "weight": 15
+    },
+    {
+      "id": "visual_coherence",
+      "label": "视觉一致与质感",
+      "weight": 10
+    },
+    {
+      "id": "reliability_and_revision_cost",
+      "label": "稳定性与修改成本",
+      "weight": 10
+    }
+  ],
+  "brief": {
+    "topic": null,
+    "viewer_takeaway": null,
+    "speech_cut_revision": null,
+    "style_approval_reference": null,
+    "target_canvas_and_fps": null,
+    "materials_reference": null,
+    "budget_and_data_authorization_reference": null,
+    "input_mode": null,
+    "source_assessment_reference": null
+  },
+  "candidates": [],
+  "candidate_record_template": {
+    "candidate_id": null,
+    "template_page": null,
+    "template_version": null,
+    "ratio": null,
+    "intended_role": null,
+    "current_availability": "unknown",
+    "checked_on": null,
+    "gates": {
+      "obtainable_and_licensed": "not_checked",
+      "real_material_replacement": "not_checked",
+      "final_presenter_continuity": "not_checked",
+      "final_mobile_readability": "not_checked",
+      "speech_timing_and_audio": "not_checked",
+      "execution_interchange_and_cost": "not_checked",
+      "final_screen_action_visibility": "not_checked"
+    },
+    "host_layout_workarounds_and_checks": [],
+    "estimated_scores_0_to_5": {
+      "content_fit": null,
+      "evidence_and_mobile_readability": null,
+      "presenter_and_ip": null,
+      "motion_audio_pacing": null,
+      "visual_coherence": null,
+      "reliability_and_revision_cost": null
+    },
+    "composed_sample_scores_0_to_5": {
+      "content_fit": null,
+      "evidence_and_mobile_readability": null,
+      "presenter_and_ip": null,
+      "motion_audio_pacing": null,
+      "visual_coherence": null,
+      "reliability_and_revision_cost": null
+    },
+    "score_evidence_by_criterion": {},
+    "sample": {
+      "same_speech_range_reference": null,
+      "same_materials_reference": null,
+      "composed_project_reference": null,
+      "actual_export_reference": null,
+      "mobile_view_check": "not_checked",
+      "screen_event_reference_if_used": null
+    },
+    "total_score_only_when_complete": null,
+    "remaining_unknowns": [],
+    "rejection_or_selection_reasons": [],
+    "evidence": [],
+    "gate_applicability_and_reasons": {}
+  },
+  "decision": {
+    "main_direction": null,
+    "selected_candidate_ids": [],
+    "scene_component_mapping_reference": null,
+    "why": [],
+    "limitations": [],
+    "user_style_approval_reference": null
+  },
+  "criterion_mode_guidance": {
+    "presenter_and_ip": "权重保留：露脸评分表情口型与布局；纯拍屏评分Rico原声/署名及操作主展示适配；混合评分两者切换，不虚构人脸表现。未知仍填null，不能默默把该维度删除或重分配权重。",
+    "gates": "final_presenter_continuity仅在适用露脸区间检查；final_screen_action_visibility在需要看懂操作/反馈的屏幕段检查。不适用项必须说明原因。"
+  }
+}

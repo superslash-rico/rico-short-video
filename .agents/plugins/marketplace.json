@@ -1,0 +1,16 @@
+{
+  "name": "rico-skills",
+  "interface": {
+    "displayName": "Rico Skills"
+  },
+  "plugins": [
+    {
+      "name": "rico-short-video",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.env
+.env.*
+*.motion
+*.mov
+*.mp4
+*.wav
+*.mp3
+*.zip
+.motiongit-library/
+public-media/
+profile.json
+acquisitions.json
+.artifacts/
+.venv/

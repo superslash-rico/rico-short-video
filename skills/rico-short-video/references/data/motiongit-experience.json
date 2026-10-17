@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "purpose": "Dated experience on particular versions; not a blanket product approval.",
+  "records": [
+    {
+      "record_id": "adunext-paper-portrait-2.5.6",
+      "name": "纸面透视 · 口播讲解 · 竖屏",
+      "page_url": "https://motiongit.com/@adunext/template-02-expanded-portrait",
+      "version": "2.5.6",
+      "ratio": "9:16",
+      "observed_on": "2026-10-16",
+      "status": "partial_technical_verification",
+      "capabilities": {
+        "graphics_video_render": {
+          "status": "passed_technical",
+          "scope": "本条1080×1920、60fps、118.633333秒有声图文渲染；不等于所有组件或艺术效果验收"
+        },
+        "native_presenter_decode": {
+          "status": "failed_in_local_case",
+          "scope": "本条竖包2.5.6/helper rc15，多次帧数不足；原因未定位，规范帧率与尾余量未解决"
+        },
+        "source_magnifier_semantic_match": {
+          "status": "failed_in_v1_configuration",
+          "scope": "手工点位及内容验收漏项；尚未证实是模板固有缺陷"
+        },
+        "motiongit_to_chatcut_interchange": {
+          "status": "not_tested"
+        },
+        "alpha_import_and_export": {
+          "status": "not_tested"
+        },
+        "overall_user_visual_approval": {
+          "status": "not_approved",
+          "scope": "用户要求Rico署名、真人持续可见及修正放大取景"
+        }
+      },
+      "selection_policy": "可参考既有图文技术路径；人物、局部取景和新组合须核验，不作为已认可系列样式",
+      "evidence_files": [
+        "references/data/first-video-case.json"
+      ]
+    },
+    {
+      "record_id": "adunext-template-01-integrated-portrait-2.5.7",
+      "name": "现代图文 · 口播讲解 · 竖屏",
+      "page_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "version": "2.5.7",
+      "ratio": "9:16",
+      "observed_on": "2026-10-16",
+      "status": "actual_preview_comparison",
+      "evidence_level": "official_runtime_seven_stills",
+      "next_check": "其他内容入选后再验证完整合成；本条纸面更匹配已有素材",
+      "local_render_verified": "seven_stills_only",
+      "chatcut_interchange_verified": false,
+      "alpha_verified": false,
+      "user_style_approved": false,
+      "evidence_files": [
+        "references/data/first-video-case.json"
+      ]
+    },
+    {
+      "record_id": "adunext-template-02-expanded-portrait-2.5.7",
+      "name": "纸面透视 · 口播讲解 · 竖屏",
+      "page_url": "https://motiongit.com/@adunext/template-02-expanded-portrait",
+      "version": "2.5.7",
+      "ratio": "9:16",
+      "observed_on": "2026-10-16",
+      "status": "used_in_completed_v4_task",
+      "evidence_level": "official_render_and_final_chatcut_mp4",
+      "component_observations": {
+        "title_quote_list_steps_compare_iconcards": "本条实际渲染并合成通过",
+        "keyword_on_paper": "本条浅底白色发光字对比不足，两处改由ChatCut实现；不推断所有关键词控件永久失败",
+        "native_presenter": "本条未用",
+        "alpha": "本条未用"
+      },
+      "next_check": "首条制作任务已完成；新素材、新组件和alpha按需要单独验证，系列审美标准未固定",
+      "local_render_verified": true,
+      "chatcut_interchange_verified": true,
+      "alpha_verified": false,
+      "user_style_approved": false,
+      "evidence_files": [
+        "references/data/first-video-case.json"
+      ]
+    },
+    {
+      "record_id": "adunext-template-04-dark-console-portrait-2.5.7",
+      "name": "科技控制台 · 口播讲解 · 竖屏",
+      "page_url": "https://motiongit.com/@adunext/template-04-dark-console-portrait",
+      "version": "2.5.7",
+      "ratio": "9:16",
+      "observed_on": "2026-10-16",
+      "status": "official_description_candidate_only",
+      "evidence_level": "opened_official_template_detail",
+      "next_check": "先看实际演示并读真实合同；选入小样后才验证本条素材与最终组合",
+      "local_render_verified": false,
+      "chatcut_interchange_verified": false,
+      "alpha_verified": false,
+      "user_style_approved": false,
+      "evidence_files": [
+        "references/data/first-video-case.json"
+      ]
+    }
+  ],
+  "approved_series_styles": []
+}

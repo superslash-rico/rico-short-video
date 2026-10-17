@@ -1,0 +1,4 @@
+interface:
+  display_name: "Rico 口播与拍屏视频制作"
+  short_description: "按原片选择露脸、拍屏或混合模式，完成剪辑包装、发布准备与复盘归档"
+  default_prompt: "使用 $rico-short-video，根据实际原片选择露脸口播、拍屏讲解或混合模式并接续制作；已有原片直接分析剪辑，我明确说任务完成后复盘归档，通用改进先形成可审核建议，最终发布按具体授权。"

@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "task_title": "AI工具更新这么快，普通人到底该怎么学？",
+  "completed_on": "2026-10-17",
+  "completion_source": "用户直接宣布第一个视频制作任务完成，并要求复盘归档",
+  "workflow": "ChatCut主时间轴与导出；MotionGit纸面透视竖版2.5.7提供重点动画资料卡",
+  "final_output": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "frames": 3559,
+    "timeline_seconds": 118.6333333333,
+    "container_seconds": 118.72,
+    "version": "V4"
+  },
+  "repeatable_lessons": [
+    "只署名Rico",
+    "开头默认3秒全画幅露脸",
+    "同源同钟的动态背景加半透明罩，背景人像微弱可见",
+    "人物布局按语义变化，阅读段稳定",
+    "源像素ROI精确放大，手机观看大字与分步内容",
+    "封面用真实目录表现丰富，可自然修饰临时皮肤与牙齿问题",
+    "所有平台最终按钮需要具体授权",
+    "用户明确结束后验证依赖再清理归档"
+  ],
+  "technical_boundaries": {
+    "alpha": "未验证",
+    "xml": "FCP XML实际遗漏MG与字幕，应另备份代码/字幕/实例覆盖",
+    "subtitles": "本地导出曾空白，云端短样和本条最终输出文字正确",
+    "efficiency_comparison": "未计时比较",
+    "full_continuous_watch_or_listening": "不能从抽帧/ASR/用户结束任务推断已由助手完整执行"
+  },
+  "template_evidence_summary": {
+    "2.5.6": "图文渲染通过；本条原生人物解码失败，V1圆镜配置有语义取景漏检；不证明全模板缺陷",
+    "2.5.7_paper": "实际渲染并在ChatCut合成，浅底白关键词改在主工程实现",
+    "2.5.7_modern": "同段7张实际预览比较，未完整总装",
+    "2.5.7_dark": "仅候选资料，不标为本条实跑"
+  },
+  "privacy": "这里不含原片、人像图片、账户包或临时授权链接；详细私人证据留在原任务档案，调用此Skill无须访问它。"
+}
