@@ -110,10 +110,40 @@
       "evidence_files": [
         "references/data/first-video-case.json"
       ]
+    },
+    {
+      "record_id": "adunext-template-01-integrated-portrait-2.7.1",
+      "name": "现代图文 · 口播讲解 · 竖屏",
+      "page_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "version": "2.7.1",
+      "ratio": "9:16",
+      "official_output_declaration": {
+        "width": 1080,
+        "height": 1920,
+        "fps": 60
+      },
+      "local_render_verified": true,
+      "chatcut_interchange_verified": true,
+      "alpha_verified": true,
+      "native_alpha_output_verified": false,
+      "alpha_verification_scope": "仅普通渲染后外部去底的30fps VP9透明模块导入及最终ChatCut H.264编码；不是模板原生alpha输出。",
+      "status": "component_handoff_technically_verified",
+      "observed_on": "2026-10-21",
+      "evidence_level": "ordinary_module_render_postprocessed_alpha_and_actual_encoded_composite",
+      "component_observations": {
+        "readability": "定义/提示与流程节点按最终手机像素裁切或交由主工程重排。",
+        "theme": "主题参数必须以实际像素核验。",
+        "presenter": "原生人物未验证，真人由主时间轴维护。"
+      },
+      "next_check": "新文字、控件、布局及原生alpha/人物按需单独验证；不继承维护者账户或预设审美。",
+      "evidence_files": [
+        "references/motiongit.md",
+        "references/chatcut.md"
+      ]
     }
   ],
   "approved_series_styles": [],
-  "updated_on": "2026-10-17",
+  "updated_on": "2026-10-21",
   "limitations": [
     "案例通过范围按模板、版本、画幅和具体能力读取，用户认可不转授素材或账户权限",
     "现代图文2.5.7验证的是普通图形去底后的VP9 alpha导入和实际输出；模板原生alpha未验证",

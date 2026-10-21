@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "revision": 28,
+  "revision": 43,
   "created_on": "2026-10-16",
-  "last_change": "Public sync of first phone-screen workflow, transparent graphics handoff, cover consistency and scoped capability evidence.",
-  "updated_at": "2026-10-17T12:13:22.843252+00:00",
+  "last_change": "Public sync of desktop editing, highlight checks, semantic motion, synchronized layers and dependency-aware archival from source revision 43.",
+  "updated_at": "2026-10-21T04:44:56.672461+00:00",
   "edition": "public",
-  "distribution_version": "0.2.0",
-  "source_revision": 28
+  "distribution_version": "0.3.0",
+  "source_revision": 43
 }
