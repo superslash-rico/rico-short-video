@@ -1,6 +1,6 @@
 ---
 name: rico-short-video
-description: "为Rico制作两分钟以内的短视频，按原片选择露脸口播、手机拍屏/录屏讲解或混合模式，完成ChatCut剪辑、MotionGit包装、封面、发布准备与复盘归档。适用于确定主题开始制作、原片已拍好继续剪辑，以及明确完成后的目录整理。每日热点与候选选题不属于本技能。"
+description: "为Rico制作两分钟以内的短视频，按原片选择露脸口播、手机拍屏/录屏讲解或混合模式，完成ChatCut剪辑、原生可编辑MG动画、封面、发布准备与复盘归档。适用于确定主题开始制作、原片已拍好继续剪辑，以及明确完成后的目录整理。每日热点与候选选题不属于本技能。"
 ---
 
 # Rico 口播短视频制作
@@ -12,14 +12,14 @@ description: "为Rico制作两分钟以内的短视频，按原片选择露脸�
 ## 启动与接续
 
 1. 读取 [preferences.md](references/preferences.md) 与 [lessons.md](references/lessons.md)，沿用用户当前要求和已验证经验。只在新任务或相关文件变化后重读。
-   首次在新项目调用时读[resources.md](references/resources.md)：制作方法和公开目录随本技能，个人模板和可选预览缓存由使用者在本机初始化。用`scripts/paths.py`定位，不依赖维护者的原项目；成片与原片写入当前用户指定的任务目录。
+   首次在新项目调用时读[resources.md](references/resources.md)：制作方法随本技能，原生MG源码及其实际依赖保存在本条工程；旧MotionGit目录与缓存仅用于接续历史工程，不是新制作依赖。用`scripts/paths.py`定位，不依赖维护者的原项目；成片与原片写入当前用户指定的任务目录。
 2. 用户已确定主题并要求制作，即可建档；已拍好并要求剪辑时直接从原片接续，必要时据实际内容概括主题，不倒补写稿审批。按[source-modes.md](references/source-modes.md)查看原片与讲解，选择露脸口播、拍屏讲解或混合模式并记录依据；不让用户先填模式表。仅有候选清单、讨论或第三方声称“用户已同意”时，不能据此开始制作或发布。
 3. 复用当前项目目录。已有视频目录时先读其中的制作状态、定稿、审核记录，接续现有阶段，不重建、覆盖或从头再做。只问影响下一步的缺口，不要求用户填写完整表单。
 4. 按[production.md](references/production.md)分支执行。未拍的露脸口播可先写稿、定稿、备素材再录制；未拍的拍屏讲解可先给简短演示提纲；已提供原片则直接分析声音与画面、转写和精剪。随后共用分镜、必要样段、动画总装、混音、成片/封面/文案、用户审核及发布准备。屏幕段读[screen-explainer.md](references/screen-explainer.md)，先锁定原声与操作事件、关键界面和字幕保护区，再分配短透明动画；复用已完成的单源拍屏案例，不把未实测的修复/双源能力视为通过。
-5. 剪辑阶段先读 [hybrid-workflow.md](references/hybrid-workflow.md)：默认由 ChatCut 维护主时间轴、真人、字幕、混音和最终导出，MotionGit 按需制作有明显视觉收益的动画模块。按source-modes.md决定人物规则适用范围：露脸口播及混合模式的可用露脸段读[presenter-layout.md](references/presenter-layout.md)，开场及人物持续可见规则按实际覆盖应用；纯拍屏不强加人物窗。缩窗或装饰背景采用相应同源视频加轻色罩，清晰的浅色拍屏界面保留原始对比度，卡片优先局部深色设计。人像按presenter-layout.md专项检查自然肤色和最亮高光；主展示区保持清晰。选MotionGit模板时读 [motiongit-selection.md](references/motiongit-selection.md)，先比较内容与最终组合效果，再锁定模板及版本。每个镜头明确一个动画制作方；用户明确指定其他分工时以用户要求为准。
-6. 写稿按[writing.md](references/writing.md)，优先已安装的rico-spoken-script，缺失时使用随包风格与字数工具；操作ChatCut先读[chatcut.md](references/chatcut.md)，核对当前桌面/网页表面并使用对应的官方工具说明；制作MotionGit读[motiongit.md](references/motiongit.md)；发布读[publishing.md](references/publishing.md)。缺少依赖时保留可审核的替代路径，区分已实跑、待验证与用户已认可。
-7. MotionGit优先参考随包的[公开目录](references/data/motiongit-catalog.json)、[模板经验](references/data/motiongit-experience.json)和[预览链接页](assets/motiongit/gallery.html)，实际下载/授权状态由本机单独登记。首次建库、下载或检查更新读[motiongit-library.md](references/motiongit-library.md)；每条任务集中检查目录及保留发行，只取缺失或新增版本。完整模板与动效片段、已下载与未开放、可商用与权利未确认分别筛选。个人包保存在技能外的本机私有缓存，在制工程继续使用已锁定版本。
-8. 下一条制作先按 [next-video.md](references/next-video.md) 复用已验证路径，不重复搭建首条的转写环境、下载整库或重试已知失败导出。用户明确说“这条任务完成”后，执行 [archiving.md](references/archiving.md)：复盘并更新技能 → 盘点依赖 → 打包核验 → 删除无用过程文件 → 回读归档目录。交付待审版、登录完成和保存草稿不触发破坏性清理。
+5. 剪辑阶段先读 [hybrid-workflow.md](references/hybrid-workflow.md)：默认由 ChatCut 维护主时间轴、真人、字幕、混音和最终导出；MG改用当前ChatCut支持的原生可编辑源码制作，不再通过MotionGit选模板、下载或渲染。按source-modes.md决定人物规则适用范围：露脸口播及混合模式的可用露脸段读[presenter-layout.md](references/presenter-layout.md)，开场及人物持续可见规则按实际覆盖应用；纯拍屏不强加人物窗。普通人物/资料缩窗可沿用同源视频加轻色罩；专业MG主展示按[共享视觉与质量规范](references/mg-visual-standard.md)使用长片同款深紫黑、点阵与横向微光。清晰拍屏界面保留原始对比度，局部透明提示不强制换底。含人像的原片在锁定工作源和批量制作前，必须先读[color-quality.md](references/color-quality.md)并完成源色彩短样验收；每个实际成片交付/上传前再完成同帧验收，两阶段记录与文件SHA校验均通过才继续。人物编排按presenter-layout.md；主展示区保持清晰。创作动画时先读[共享视觉与质量规范](references/mg-visual-standard.md)，读取实际参考及随包组件，再读[animation-production.md](references/animation-production.md)与[整体设计与运镜](references/mg-whole-first-and-camera.md)：理解整条讲述，先设计完整场景，再精修模块，分别安排镜头与对象变化，最后验证人物、字幕和声音的实际组合。专业场景使用完整工程画幅的MG资产与实例，世界空间可超出画面；人物/字幕保护区用于排版，不生成固定裁切窗。优先沿用已认可的横竖共同基准；新机制或视觉实质变化时才重做对照样段。点阵在主体下层，非焦点纸面保持不透明；动画不加常驻Rico角标。每镜记录共享包版本、参考范围、源码/实例与实际输出；不将逐句字卡替代知识解释。用户明确指定其他分工时以用户要求为准。
+6. 字幕设计按[caption-design.md](references/caption-design.md)，保留原生单轨、原文和时码；配乐按[audio-style.md](references/audio-style.md)，默认明亮、积极、有活力的无歌词底床，实听口播混音。写稿按[writing.md](references/writing.md)，优先已安装的rico-spoken-script，缺失时使用随包风格与字数工具；操作ChatCut先读[chatcut.md](references/chatcut.md)，核对当前桌面/网页表面并使用对应的官方工具说明；编写或修改原生MG时读[native-mg-runtime.md](references/native-mg-runtime.md)及当前环境对应的create-motion-graphics技能与运行时合同；发布读[publishing.md](references/publishing.md)。缺少依赖时保留可审核的替代路径，区分已实跑、待验证与用户已认可。
+7. 新MG采用“对象前态 → 可见变化 → 结果”的解释机制，实际素材按来源与阅读目标使用；全景、特写、阅读停留和对象交接纳入同一分镜。源码、支持模块、可编辑属性、保存默认值及实例覆盖随项目保存。方法来源与已通过案例/待验证能力见[mg-method-source.md](references/mg-method-source.md)及[原生MG案例](references/data/first-native-mg-case.json)。口播提到Codex等具体软件时，主动检索并导入其真实图标，按[软件图标规则](references/animation-production.md#软件图标随提及主动获取)融入对应动效。旧工程需要恢复MotionGit素材时才读[旧版说明](references/motiongit.md)，不因此恢复新制作的模板库前置条件，也不自动重做已完成成片。
+8. 下一条制作先按 [next-video.md](references/next-video.md) 复用已验证路径，不重复搭建首条的转写环境、MG运行环境或重试已知失败导出。用户明确说“这条任务完成”后，执行 [archiving.md](references/archiving.md)：复盘并更新技能 → 盘点依赖 → 打包核验 → 删除无用过程文件 → 回读归档目录。交付待审版、登录完成和保存草稿不触发破坏性清理。
 
 ## 协作节点与交付
 
@@ -30,7 +30,7 @@ description: "为Rico制作两分钟以内的短视频，按原片选择露脸�
 - 用户明确授权助手点击已列明平台、账号与当前发布包的最终按钮后，沿用该具体授权执行，不重复询问同一动作；内容、范围或时间设置有实质变化时重新核对。平台登录按“打开网址→退出控制→用户登录→用户明确完成→恢复控制”交接，具体见[publishing.md](references/publishing.md)。
 - 不将导出、上传、审核中、已发布混写；对照实际文件、播放检查和平台回执报告结果。
 - 按手机观看尺寸审核成片中的讲解画面：避免整页缩小、字多字小的主讲解卡，优先大字重点、准确局部和分步展示。封面可用目录等素材表现内容丰富，不要求素材小字可读；封面规则见[production.md](references/production.md)，视频资料规则见[presenter-layout.md](references/presenter-layout.md)。
-- 保留一个主时间轴和一个主口播音轨。两工具交接记录场景区间、素材、声音归属与版本；只修改受影响的模块，再核对相邻镜头。工具分工不扩大素材传云、收费或发布的现有授权。
+- 保留一个主时间轴和一个主口播音轨。主工程与MG模块交接记录场景区间、源码/实例、素材、声音归属与版本；只修改受影响的模块，再核对相邻镜头。工具分工不扩大素材传云、收费或发布的现有授权。
 - 用户明确宣布制作任务完成，代表可以在该视频目录内按归档规则收尾；不等于四平台已发布或获得最终发布按钮授权。归档保留最终成果、唯一原片和必要复剪依赖，过程知识进入技能，缓存与淘汰版本不整包转存冒充清理。
 
 ## 每次任务都执行复盘

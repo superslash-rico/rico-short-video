@@ -1,0 +1,92 @@
+[
+  {
+    "key": "title",
+    "label": "title",
+    "type": "text",
+    "defaultValue": "自己做好，带队达标"
+  },
+  {
+    "key": "selfText",
+    "label": "selfText",
+    "type": "text",
+    "defaultValue": "自己完成"
+  },
+  {
+    "key": "goalText",
+    "label": "goalText",
+    "type": "text",
+    "defaultValue": "共同目标"
+  },
+  {
+    "key": "resourceText",
+    "label": "resourceText",
+    "type": "text",
+    "defaultValue": "调动资源"
+  },
+  {
+    "key": "resourceDetail",
+    "label": "resourceDetail",
+    "type": "text",
+    "defaultValue": "身边可用的条件"
+  },
+  {
+    "key": "colleagueText",
+    "label": "colleagueText",
+    "type": "text",
+    "defaultValue": "协调同事"
+  },
+  {
+    "key": "colleagueDetail",
+    "label": "colleagueDetail",
+    "type": "text",
+    "defaultValue": "让分工围绕目标"
+  },
+  {
+    "key": "resultText",
+    "label": "resultText",
+    "type": "text",
+    "defaultValue": "一起达成目标"
+  },
+  {
+    "key": "fontFamily",
+    "label": "fontFamily",
+    "type": "font",
+    "defaultValue": "MiSans"
+  },
+  {
+    "key": "backgroundColor",
+    "label": "backgroundColor",
+    "type": "color",
+    "defaultValue": "#0C0A14"
+  },
+  {
+    "key": "headingColor",
+    "label": "headingColor",
+    "type": "color",
+    "defaultValue": "#F4A6FF"
+  },
+  {
+    "key": "accentColor",
+    "label": "accentColor",
+    "type": "color",
+    "defaultValue": "#9B22AF"
+  },
+  {
+    "key": "inkColor",
+    "label": "inkColor",
+    "type": "color",
+    "defaultValue": "#231529"
+  },
+  {
+    "key": "transparentBackground",
+    "label": "transparentBackground",
+    "type": "boolean",
+    "defaultValue": false
+  },
+  {
+    "key": "parallax",
+    "label": "parallax",
+    "type": "boolean",
+    "defaultValue": true
+  }
+]

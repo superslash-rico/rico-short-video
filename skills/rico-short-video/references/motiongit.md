@@ -1,5 +1,7 @@
 # MotionGit 制作执行
 
+> 旧工程兼容参考。2026-10-22起新动画创作改走[原生MG方法](animation-production.md)，本文仅用于恢复已有MotionGit工程与锁定依赖。下文原有制作/建库指令不再作为新任务默认步骤，不自动重新启用模板下载或覆盖现有成片。
+
 MotionGit默认承担适合本条的重点动画，最终剪辑与合成由ChatCut主工程维护，分工见[hybrid-workflow.md](hybrid-workflow.md)。这里维护模板执行与实际边界，不把MotionGit简化成未经核验的通用剪辑、透明导出或工程转换API。
 
 ## 当前任务开始前

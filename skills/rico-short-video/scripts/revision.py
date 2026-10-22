@@ -4,6 +4,7 @@ import argparse
 import difflib
 import hashlib
 import json
+import re
 import subprocess
 import sys
 import uuid
@@ -83,6 +84,9 @@ def begin(args):
 
 
 def finish(args):
+    version = getattr(args, "distribution_version", None)
+    if version is not None and not re.fullmatch(r"[0-9]+\.[0-9]+\.[0-9]+(?:-[0-9A-Za-z.-]+)?", version):
+        raise ValueError("Invalid distribution version.")
     snapshot = Path(args.snapshot).expanduser().resolve()
     record_path = snapshot / "record.json"
     record = read_json(record_path)
@@ -91,6 +95,8 @@ def finish(args):
     current = files_at(ROOT)
     current_hashes = hashes(current)
     if record["status"] in {"applied", "no_change"}:
+        if version is not None and read_json(ROOT / "revision.json").get("distribution_version") != version:
+            raise ValueError("Snapshot already finished with another distribution version.")
         if current_hashes != record["after_hashes"]:
             raise ValueError("Skill changed after this revision; begin a new snapshot.")
         print(json.dumps({
@@ -128,11 +134,15 @@ def finish(args):
         name for name in set(record["before_hashes"]) | set(current_hashes)
         if name != "revision.json" and record["before_hashes"].get(name) != current_hashes.get(name)
     )
+    if version is not None and not changed and current_revision.get("distribution_version") != version:
+        raise ValueError("Release metadata requires a resource change in this snapshot.")
     if changed:
         current_revision.update({
             "revision": current_revision["revision"] + 1,
             "updated_at": now(), "last_change": args.summary
         })
+        if version is not None:
+            current_revision.update({"distribution_version": version, "source_revision": current_revision["revision"]})
         write_json(ROOT / "revision.json", current_revision)
     after = files_at(ROOT)
     copy_files(after, snapshot / "after")
@@ -173,6 +183,7 @@ def main():
     end.add_argument("--snapshot", required=True)
     end.add_argument("--summary", required=True)
     end.add_argument("--validator", required=True)
+    end.add_argument("--distribution-version", help="Record this public release and its source revision in the same snapshot.")
     args = parser.parse_args()
     try:
         begin(args) if args.command == "begin" else finish(args)

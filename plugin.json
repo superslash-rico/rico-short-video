@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "rico-short-video",
-  "version": "0.3.0",
-  "description": "Rico短视频制作工作流：露脸口播、拍屏讲解与混合模式，ChatCut主剪辑与MotionGit动画。",
+  "version": "0.4.0",
+  "description": "Rico短视频制作工作流：露脸、拍屏与混合模式，ChatCut主剪辑、同源原生MG和活力配乐。",
   "author": {
     "name": "Rico"
   },

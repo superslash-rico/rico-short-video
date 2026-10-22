@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "applies": true,
+  "not_applicable_reason": null,
+  "artifacts": {
+    "source": [],
+    "working": [],
+    "representative_encode": [],
+    "final": []
+  },
+  "source_gate": {
+    "status": "pending",
+    "reviewed_at": null,
+    "input_classification": "unknown",
+    "pipeline_notes": null,
+    "reference_display": null,
+    "coverage": {
+      "opening": [],
+      "brightest_face": [],
+      "middle": [],
+      "ending": []
+    },
+    "near_or_light_change": {"status": "pending", "notes": null},
+    "checks": {
+      "correct_color_interpretation": "pending",
+      "single_color_conversion": "pending",
+      "natural_skin": "pending",
+      "highlight_color_and_detail": "pending",
+      "normal_midtones": "pending",
+      "face_100_percent": "pending",
+      "phone_size": "pending",
+      "representative_encode_reviewed": "pending"
+    },
+    "evidence": []
+  },
+  "final_gate": {
+    "status": "pending",
+    "reviewed_at": null,
+    "source_timeline_mapping": null,
+    "transitions": {"status": "pending", "notes": null},
+    "checks": {
+      "same_frame_comparison": "pending",
+      "natural_skin": "pending",
+      "highlight_color_and_detail": "pending",
+      "normal_midtones": "pending",
+      "face_100_percent": "pending",
+      "phone_size": "pending",
+      "no_additional_whitening": "pending",
+      "color_tags_and_range": "pending"
+    },
+    "evidence": []
+  }
+}

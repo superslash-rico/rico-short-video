@@ -1,8 +1,8 @@
 # Rico 口播与拍屏视频制作 Skill
 
-为短视频制作提供可复用的协作流程：**露脸口播、手机拍屏/录屏讲解、混合模式**。ChatCut负责主剪辑、字幕、声音和最终导出，MotionGit按内容提供重点动画；成片、封面、发布准备、复盘与归档在同一流程中接续。
+为短视频制作提供可复用的协作流程：**露脸口播、手机拍屏/录屏讲解、混合模式**。ChatCut负责主剪辑、字幕、声音和最终导出，原生可编辑源码按讲述创作MG动画；成片、封面、发布准备、复盘与归档在同一流程中接续。
 
-本仓库是轻量公开分发版，当前 `main` 为 **v0.3.0 / 来源技能修订43**。它提供工作流和辅助脚本，实际视频处理需要使用者自己的工具、素材及授权。露脸与手机单源拍屏已有制作案例；混合、双源同步、稳像/去频闪和自动跟踪仍按具体素材验证。
+本仓库是轻量公开分发版，当前 `main` 为 **v0.4.0 / 来源技能修订48**。它提供工作流和辅助脚本，实际视频处理需要使用者自己的工具、素材及授权。露脸与手机单源拍屏已有制作案例；混合、双源同步、稳像/去频闪和自动跟踪仍按具体素材验证。
 
 当前版将六项剪辑经验接入下一条制作入口：自然肤色与高光、真实素材和动画表达、声画事件、转场中途检查、同源单声单字幕、模块修改及依赖归档。支持按当前实际工具优先接续ChatCut Desktop，并保留网页表面的适用方法。详见[制作入口](skills/rico-short-video/references/next-video.md)和[人像高光检查](skills/rico-short-video/references/presenter-layout.md)。
 
@@ -21,7 +21,7 @@ python3 <技能目录>/scripts/setup_local.py
 python3 <技能目录>/scripts/verify_resources.py
 ```
 
-需要Python 3.10或更新版本。ChatCut插件、MotionGit个人模板授权及浏览器能力需各自准备；安装Skill不继承维护者的登录、Key或付费权限。
+需要Python 3.10或更新版本。ChatCut、当前原生MG运行环境及浏览器能力需各自准备；新制作不需要MotionGit模板库。旧工程恢复才核对旧模板许可；安装Skill不继承维护者的登录、Key或付费权限。
 
 ## 使用
 
@@ -34,7 +34,7 @@ python3 <技能目录>/scripts/verify_resources.py
 
 露脸开场默认2—3秒全幅真人；适用区间人物持续可见。缩窗/资料组合需背景时用同源视频加轻色罩。手机观看要看清真实目标；拍屏保护输入、反馈、等待、结果和解释的关系，无口播等待压缩或加速需据实标注。
 
-拍屏先按原声和操作事件剪辑，保护按钮、反馈、结果和字幕；MotionGit默认用多次短透明内容辅助表达，已有普通图形去底后VP9 alpha导入ChatCut的案例。设备播报与配乐、动作音效分开处理。详见[拍屏制作流程](skills/rico-short-video/references/screen-explainer.md)及[公开方法摘要](skills/rico-short-video/references/data/first-screen-case.json)。
+拍屏先按原声和操作事件剪辑，保护按钮、反馈、结果和字幕；默认用原生短透明图形辅助表达。旧MotionGit去底/VP9 alpha案例只用于历史工程恢复，不证明新方法的透明烘焙能力。设备播报与配乐、动作音效分开处理。详见[拍屏制作流程](skills/rico-short-video/references/screen-explainer.md)及[公开方法摘要](skills/rico-short-video/references/data/first-screen-case.json)。
 
 封面默认16:9、3:4、4:3分别构图，先读取已认可的系列风格。视频不露脸，也可以在实际肖像许可内设计本人封面；安装本技能不会继承维护者的肖像授权。
 
@@ -68,7 +68,17 @@ codex plugin marketplace upgrade rico-skills
 
 参考：[OpenAI技能文档](https://learn.chatgpt.com/docs/build-skills)、[插件与仓库市场](https://developers.openai.com/plugins/build/plugins)。
 
-## 模板与预览
+## 当前动画与声音标准
+
+专业MG采用完整工程画幅：深紫黑`#0C0A14`、清楚而克制的点阵、中部横向淡紫微光；点阵在主体下层，弱跟随实际镜头，纸面始终不透明。用纸面材质、厚度、阴影、透视与前后关系建立空间，不添加复杂舞台或顶底遮挡带。
+
+先理解讲述、设计完整场景，再精修对象的前态/变化/结果，分别编排摄影机和对象。横竖屏共享工艺与质量，分别构图、取景、避让真人；保留短视频原人物窗口和其它剪辑流程。已有认可的同内容横竖基准和完整竖屏案例；随包纯MG研究代码不含人物、音轨或真实截图。
+
+字幕继续原生可编辑，保留准确原文和时码，以字级和重点提高设计感；MG不放常驻Rico角标。提到具体软件时主动取得官方真实图标并按口播锚点融入动画。配乐默认明亮、积极、有活力的无歌词器乐，实际听口播混音，保留人声ducking。
+
+详见[共享视觉与质量](skills/rico-short-video/references/mg-visual-standard.md)、[原生MG创作](skills/rico-short-video/references/animation-production.md)、[字幕设计](skills/rico-short-video/references/caption-design.md)、[配乐](skills/rico-short-video/references/audio-style.md)及[案例范围](skills/rico-short-video/references/data/first-native-mg-case.json)。第三方代码来源见[许可说明](docs/THIRD_PARTY_NOTICES.md)。长视频技能尚未被本仓库自动修改。
+
+## 旧工程的模板与预览
 
 公开版包含45项历史官方目录参考、123项已观察到的预览/封面URL及通用制作经验；不包含第三方预览视频、模板原包、账户helper或授权回执。
 

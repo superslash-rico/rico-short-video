@@ -1,7 +1,7 @@
 {
-  "schema_version": 5,
+  "schema_version": 7,
   "template_only": true,
-  "usage": "由助手据实际原片和工程填写，生产清单移除scene_record_template并设置template_only=false。v5补充录制方式、屏幕保护区、真实设备声音和alpha制作路线；仅填写实际适用段并引用主分镜，不要求用户填表。旧v1—v4可读，不强制迁移已归档视频；此清单不是原生工具API。",
+  "usage": "由助手填写。v7补充共享视觉包/参考、完整画幅/世界/排版约束、横竖对照样段与质量证据；保留v6所有既有字段和人物/背景/屏幕/声音结构。生产清单移除scene_record_template并设置template_only=false。旧清单可读，不是工具API。",
   "master": {
     "editor": "ChatCut",
     "project_id": null,
@@ -29,7 +29,18 @@
     "input_mode": null,
     "source_assessment_reference": null,
     "entry_path": null,
-    "capture_method": null
+    "capture_method": null,
+    "mg_method": "native_editable_whole_first",
+    "current_application_manifest_reference": null,
+    "legacy_template_selection_reference_note": "template_selection_reference仅供旧MotionGit工程，不是新制作必填项",
+    "shared_mg_standard": {
+      "id": "rico-shared-mg",
+      "version": "0.1.0",
+      "manifest_reference": null,
+      "component_sources_and_sha256": [],
+      "reference_review_record": null,
+      "paired_benchmark_reference": null
+    }
   },
   "scenes": [],
   "scene_record_template": {
@@ -91,7 +102,25 @@
       "separate_sfx_file_and_anchor": null,
       "license_receipt": null,
       "revision": null,
-      "alpha_production_method": null
+      "alpha_production_method": null,
+      "creation_method": "native_editable_source",
+      "source_and_binding": {
+        "runtime_and_current_contract_reference": null,
+        "entry_file": null,
+        "support_files_and_sha256": [],
+        "property_schema_reference": null,
+        "saved_defaults": null,
+        "asset_id": null,
+        "instance_ids": [],
+        "instance_overrides_and_effective_values_reference": null,
+        "source_revision_or_sha256": null,
+        "editable_property_change_restore_evidence": [],
+        "font_media_dependencies_and_licenses_reference": null,
+        "local_time_and_actual_fps_reference": null
+      },
+      "legacy_template_note": "source_project/template_id_and_version可读以恢复旧工程；原生MG以source_and_binding为准，不要求MotionGit模板",
+      "current_output_reference": null,
+      "output_mode": "native_layer"
     },
     "checks": {
       "presenter_continuity": "not_checked",
@@ -114,7 +143,24 @@
       "wait_edit_and_disclosure_if_used": "not_checked",
       "same_time_screen_background_if_used": "not_checked",
       "critical_screen_content_unobscured": "not_checked",
-      "real_device_audio_if_relevant": "not_checked"
+      "real_device_audio_if_relevant": "not_checked",
+      "whole_scene_design_and_mobile_composition": "not_checked",
+      "detail_readability_and_complete_meaning": "not_checked",
+      "visible_before_process_after": "not_checked",
+      "camera_object_separation_and_identity": "not_checked",
+      "extrema_handoff_and_neighbor_frames": "not_checked",
+      "source_property_instance_binding": "not_checked",
+      "random_seek_and_sequential_state_equivalence": "not_checked",
+      "same_version_source_instance_preview_export": "not_checked",
+      "continuous_visual_review": "not_checked",
+      "actual_listening_review": "not_checked",
+      "user_aesthetic_and_rhythm_review": "not_checked",
+      "target_viewer_understanding": "not_checked",
+      "full_canvas_asset_instance_and_no_internal_clip": "not_checked",
+      "protected_regions_are_layout_constraints": "not_checked",
+      "shared_material_typography_and_motion_reference": "not_checked",
+      "paired_aspect_ratio_benchmark": "not_checked",
+      "background_actual_camera_weak_parallax": "not_checked"
     },
     "background_layers": {
       "mode": null,
@@ -156,6 +202,45 @@
         "master_range_frames": null,
         "reason": null
       }
+    },
+    "explanation_design": {
+      "understanding_goal": null,
+      "content_and_fact_reference": null,
+      "required_conditions_and_units": [],
+      "objects": [],
+      "whole_scene": {
+        "opening_design_reference": null,
+        "intermediate_reorganization_references": [],
+        "result_design_reference": null,
+        "grouping_hierarchy_and_visual_center": null,
+        "usable_information_region_reference": null
+      },
+      "detail_reading_units": [],
+      "camera_track": [],
+      "object_action_track": [],
+      "reading_holds": [],
+      "identity_and_handoff_plan": null,
+      "critical_states_and_neighbor_frame_ranges": []
+    },
+    "canvas_and_world": {
+      "output_canvas_reference": null,
+      "asset_natural_size": null,
+      "timeline_instance_rect": null,
+      "world_extent_reference": null,
+      "reading_regions_reference": null,
+      "protected_region_treatment": "layout_route_layer_timing_not_mask",
+      "intentional_object_local_masks": [],
+      "internal_scene_clip": "none",
+      "aspect_ratio_adapter_reference": null
+    },
+    "shared_quality": {
+      "reference_ids_and_accepted_scope": [],
+      "material_and_spatial_mechanism": null,
+      "same_content_landscape_and_portrait_versions": null,
+      "overview_detail_and_projection_evidence": [],
+      "camera_background_same_pose_evidence": [],
+      "boundary_and_extrema_evidence": [],
+      "user_style_and_quality_acceptance": "not_checked"
     }
   },
   "presenter_layout_conventions": {
@@ -185,5 +270,32 @@
     "protected_regions": "仅在需要的段记录含义、有效主区间、源ROI或主分镜引用、动画让位方式；随手持移动更新，复用现有锚点与坐标，不重复维护冲突时码。",
     "real_device_audio": "按语义记录preserve/remove/duck等真实处理及理由；现场有信息的播报与无关失败提示分开判断。",
     "alpha_production_method": "明确native、postprocessed_graphics或none；alpha验证通过不自动证明模板原生alpha。"
+  },
+  "mg_design_conventions": {
+    "scope": "仅动画创作更新；presenter_layout、background_layers、screen_action_context及其原有约束继续有效",
+    "objects": "按需要记录object_id、meaning、before、visible_transformation、after及真实素材引用，保持整体/特写的身份连续",
+    "tracks": "camera_track记录观察目的、实际实现、起止构图/路径/抵达；object_action_track记录对象自身动作，两者分开，区间引用同一主分镜并使用局部秒数",
+    "reading_holds": "记录完整阅读单位、抵达/离开时刻与必要轻微运动；具体时长按实际语音和手机可读性确定",
+    "same_version_manifest": "主时轴→源码/支持模块摘要→保存属性/实例覆盖→实际预览/导出→检查范围；当前绑定优先于文件夹版本号",
+    "legacy": "旧模板字段保留兼容，无需给原生MG伪填模板ID、MotionGit源或烘焙文件；不适用项写原因",
+    "validation": "设计自查、存储绑定、原生合成、实际编码、连续观看、完整试听、用户审美及观众理解各记真实状态"
+  },
+  "shared_mg_conventions": {
+    "background_modes": [
+      "shared_professional_mg",
+      "same_time_video_with_tint",
+      "transparent_overlay_on_footage"
+    ],
+    "reading_regions": "Used for framing/layout calculations; never becomes an internal scene clip",
+    "background_checks": "Same-time background-video/tint checks may be not_applicable for shared professional background with a reason; presenter sync and actual camera/parallax checks still apply",
+    "benchmark": "Match same content in 16:9 and 9:16; do not infer aesthetic acceptance from technical success",
+    "background_layering": "base/glow/dots behind opaque objects, then presenter and native captions; shade surfaces locally instead of fading paper opacity",
+    "accepted_case": "references/data/first-native-mg-case.json; reuse accepted style, validate new content and composition"
+  },
+  "packaging_style": {
+    "corner_brand_mark_default": false,
+    "captions": "native editable, accurate wording/timing, clear hierarchy and restrained semantic emphasis",
+    "music": "bright positive energetic instrumental; check actual speech mix and ducking",
+    "evidence": "Record actual scope for watching, listening, technical checks and user acceptance separately"
   }
 }

@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "revision": 43,
+  "revision": 48,
   "created_on": "2026-10-16",
-  "last_change": "Public sync of desktop editing, highlight checks, semantic motion, synchronized layers and dependency-aware archival from source revision 43.",
-  "updated_at": "2026-10-21T04:44:56.672461+00:00",
+  "last_change": "统一原生MG创作与获批横竖基准、完整画幅、背景层级/不透明纸面、设计字幕、真实软件图标、活力配乐和已验证边界；公开发行0.4.0。",
+  "updated_at": "2026-10-22T10:50:55.498105+00:00",
   "edition": "public",
-  "distribution_version": "0.3.0",
-  "source_revision": 43
+  "distribution_version": "0.4.0",
+  "source_revision": 48
 }

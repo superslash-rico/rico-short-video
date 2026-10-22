@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "source_commit": "98bc17e43843064a31d655c3a4e989502f42f7c2",
+  "resources": [
+    {
+      "id": "project-record-still",
+      "kind": "image",
+      "source_relative_path": "assets/craft-studies/project-record/project-record-native.jpg",
+      "bytes": 178139,
+      "sha256": "f3e9fa6ac63832ba38a2260c9769faa4fad06110ba7688ca11b832d1a04a2c2f",
+      "url": "https://raw.githubusercontent.com/superslash-rico/course-long-video-editing/98bc17e43843064a31d655c3a4e989502f42f7c2/course-long-video-editing/assets/craft-studies/project-record/project-record-native.jpg",
+      "approved_scope": "partial_craft_only",
+      "use": "Observe material, depth and object identity; not an approved overall layout"
+    },
+    {
+      "id": "project-record-motion",
+      "kind": "image",
+      "source_relative_path": "assets/craft-studies/project-record/project-record-chronology.jpg",
+      "bytes": 315934,
+      "sha256": "ab74460d07c5c9e82d54c7a3054d9e3f3dfd99ae300bc91394e461b0fa4019db",
+      "url": "https://raw.githubusercontent.com/superslash-rico/course-long-video-editing/98bc17e43843064a31d655c3a4e989502f42f7c2/course-long-video-editing/assets/craft-studies/project-record/project-record-chronology.jpg",
+      "approved_scope": "partial_craft_only",
+      "use": "Observe actual state order and framing; not standalone video verification"
+    },
+    {
+      "id": "project-record-video",
+      "kind": "video",
+      "source_relative_path": "assets/craft-studies/project-record/project-record-partial-craft.mp4",
+      "bytes": 26701863,
+      "sha256": "727c792fdbd3ba0a025332bd21daad647555da20105e70c6bcb2208e2d0d4a13",
+      "url": "https://raw.githubusercontent.com/superslash-rico/course-long-video-editing/98bc17e43843064a31d655c3a4e989502f42f7c2/course-long-video-editing/assets/craft-studies/project-record/project-record-partial-craft.mp4",
+      "approved_scope": "partial_craft_only",
+      "use": "Watch historical craft; HEVC/HLG display differs by player; no reuse of sample people/voice/SFX"
+    },
+    {
+      "id": "reference-scope",
+      "kind": "text",
+      "source_relative_path": "references/example-guide.md",
+      "bytes": 4706,
+      "sha256": "81600e335ff9fe4bc5d5f157a7f547924b4b73d3869023afef2368b45796eddb",
+      "url": "https://raw.githubusercontent.com/superslash-rico/course-long-video-editing/98bc17e43843064a31d655c3a4e989502f42f7c2/course-long-video-editing/references/example-guide.md",
+      "approved_scope": "scope_evidence",
+      "use": "Read accepted/rejected scope before reusing references"
+    },
+    {
+      "id": "code-source",
+      "kind": "code",
+      "source_relative_path": "assets/examples/project-record/src/ExplodedRecordPurple.tsx",
+      "bytes": 12215,
+      "sha256": "0b48865bd26dec0302eccec378ba82b7bfa977128cce8af21d851eb235be87c0",
+      "url": "https://raw.githubusercontent.com/superslash-rico/course-long-video-editing/98bc17e43843064a31d655c3a4e989502f42f7c2/course-long-video-editing/assets/examples/project-record/src/ExplodedRecordPurple.tsx",
+      "approved_scope": "partial_craft_only",
+      "use": "Study paper layering/projection/identity; redesign content, overall composition and choreography"
+    },
+    {
+      "id": "code-backdrop",
+      "kind": "code",
+      "source_relative_path": "assets/examples/project-record/src/DotBackdrop.tsx",
+      "bytes": 3220,
+      "sha256": "5a08e8af38760c6df837188575726904fd5e7a63ed8ef5ad3e49d0a6c9e0949d",
+      "url": "https://raw.githubusercontent.com/superslash-rico/course-long-video-editing/98bc17e43843064a31d655c3a4e989502f42f7c2/course-long-video-editing/assets/examples/project-record/src/DotBackdrop.tsx",
+      "approved_scope": "background_mechanism",
+      "use": "Study actual-camera distant parallax; adapt canvas and validate"
+    },
+    {
+      "id": "code-camera",
+      "kind": "code",
+      "source_relative_path": "assets/examples/project-record/src/shotCamera.ts",
+      "bytes": 1324,
+      "sha256": "b4d7c53436f6fd8b3e54106851e56c9f07f21678c2512a2d4a73cab593dd1130",
+      "url": "https://raw.githubusercontent.com/superslash-rico/course-long-video-editing/98bc17e43843064a31d655c3a4e989502f42f7c2/course-long-video-editing/assets/examples/project-record/src/shotCamera.ts",
+      "approved_scope": "camera_mechanism",
+      "use": "Study readable holds and purposeful transition; convert time from actual fps"
+    },
+    {
+      "id": "code-camera-plan",
+      "kind": "code",
+      "source_relative_path": "assets/examples/project-record/src/cameraPlan.ts",
+      "bytes": 448,
+      "sha256": "b62d91f5e4ea6757bf3965c807a1b72d6e02a2d92c86e549dd24c591a36b1baf",
+      "url": "https://raw.githubusercontent.com/superslash-rico/course-long-video-editing/98bc17e43843064a31d655c3a4e989502f42f7c2/course-long-video-editing/assets/examples/project-record/src/cameraPlan.ts",
+      "approved_scope": "historical_choreography_only",
+      "use": "Do not copy old timecodes, layout or path"
+    },
+    {
+      "id": "rights",
+      "kind": "text",
+      "source_relative_path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 3574,
+      "sha256": "3e7430fce61ddf04c417aba253bdd959bebd13fb9c153158481bb3151d77c077",
+      "url": "https://raw.githubusercontent.com/superslash-rico/course-long-video-editing/98bc17e43843064a31d655c3a4e989502f42f7c2/course-long-video-editing/THIRD_PARTY_NOTICES.md",
+      "approved_scope": "license_evidence",
+      "use": "Read visual/audio/font boundaries"
+    },
+    {
+      "id": "upstream-license",
+      "kind": "text",
+      "source_relative_path": "assets/licenses/LICENSE-video-shotcraft.txt",
+      "bytes": 11340,
+      "sha256": "b2ce9877a55547ada9b870150664d1468ff777e67cc9888806a73927d31c5771",
+      "url": "https://raw.githubusercontent.com/superslash-rico/course-long-video-editing/98bc17e43843064a31d655c3a4e989502f42f7c2/course-long-video-editing/assets/licenses/LICENSE-video-shotcraft.txt",
+      "approved_scope": "license_evidence",
+      "use": "Apache-2.0 attribution for adapted code"
+    },
+    {
+      "id": "font-requirements",
+      "kind": "text",
+      "source_relative_path": "assets/fonts/requirements.json",
+      "bytes": 2830,
+      "sha256": "f4147095e0cf679018b79bf53a14ca530d5e3b1ab41d6b4c54caa13e13e6f0a3",
+      "url": "https://raw.githubusercontent.com/superslash-rico/course-long-video-editing/98bc17e43843064a31d655c3a4e989502f42f7c2/course-long-video-editing/assets/fonts/requirements.json",
+      "approved_scope": "font_source_evidence",
+      "use": "Use original names, weights, hashes and actual rendered glyphs"
+    },
+    {
+      "id": "font-license",
+      "kind": "pdf",
+      "source_relative_path": "assets/fonts/MiSans字体知识产权许可协议.pdf",
+      "bytes": 79535,
+      "sha256": "4a93a27cd2bd81b3b5ecfd0a853144a876fa26938a93a68443c67d74172fcb86",
+      "url": "https://raw.githubusercontent.com/superslash-rico/course-long-video-editing/98bc17e43843064a31d655c3a4e989502f42f7c2/course-long-video-editing/assets/fonts/MiSans%E5%AD%97%E4%BD%93%E7%9F%A5%E8%AF%86%E4%BA%A7%E6%9D%83%E8%AE%B8%E5%8F%AF%E5%8D%8F%E8%AE%AE.pdf",
+      "approved_scope": "font_license_only",
+      "use": "Original font license applies separately"
+    },
+    {
+      "id": "font-regular",
+      "kind": "font",
+      "source_relative_path": "assets/fonts/MiSans-Regular.ttf",
+      "bytes": 7924400,
+      "sha256": "7172aa1b5c703780ee12df3fe4c50481dde01f3b125a045a398000a88d032ae5",
+      "url": "https://raw.githubusercontent.com/superslash-rico/course-long-video-editing/98bc17e43843064a31d655c3a4e989502f42f7c2/course-long-video-editing/assets/fonts/MiSans-Regular.ttf",
+      "approved_scope": "font_dependency",
+      "use": "Register unchanged original font when needed; preserve license"
+    },
+    {
+      "id": "font-medium",
+      "kind": "font",
+      "source_relative_path": "assets/fonts/MiSans-Medium.ttf",
+      "bytes": 7876052,
+      "sha256": "93528275ee67039c1daeb2ef700625bcf72abab2d3f97e1b6afae6273b579fc1",
+      "url": "https://raw.githubusercontent.com/superslash-rico/course-long-video-editing/98bc17e43843064a31d655c3a4e989502f42f7c2/course-long-video-editing/assets/fonts/MiSans-Medium.ttf",
+      "approved_scope": "font_dependency",
+      "use": "Register unchanged original font when needed; preserve license"
+    },
+    {
+      "id": "font-semibold",
+      "kind": "font",
+      "source_relative_path": "assets/fonts/MiSans-Semibold.ttf",
+      "bytes": 7824000,
+      "sha256": "7143f0160b52fa639c464f8dc904f01e1c1d28a6c514dd8d1fb99fcf28886258",
+      "url": "https://raw.githubusercontent.com/superslash-rico/course-long-video-editing/98bc17e43843064a31d655c3a4e989502f42f7c2/course-long-video-editing/assets/fonts/MiSans-Semibold.ttf",
+      "approved_scope": "font_dependency",
+      "use": "Register unchanged original font when needed; preserve license"
+    },
+    {
+      "id": "font-bold",
+      "kind": "font",
+      "source_relative_path": "assets/fonts/MiSans-Bold.ttf",
+      "bytes": 7804780,
+      "sha256": "250fb5c8d4657f103e332b0b948a995e45f2c159beb8d0528424e2d32ae421be",
+      "url": "https://raw.githubusercontent.com/superslash-rico/course-long-video-editing/98bc17e43843064a31d655c3a4e989502f42f7c2/course-long-video-editing/assets/fonts/MiSans-Bold.ttf",
+      "approved_scope": "font_dependency",
+      "use": "Register unchanged original font when needed; preserve license"
+    }
+  ],
+  "latest_whole_first_complete_approved_example": null,
+  "shared_paired_benchmark": {
+    "accepted_on": "2026-10-22",
+    "scope": "paper/depth/camera; later opaque-paper, no-corner-mark, caption refinements applied",
+    "source": "assets/mg-shared/TaskCapabilityStudy.jsx",
+    "properties": "assets/mg-shared/study-properties.json",
+    "duration_seconds": 9.6,
+    "private_media_distributed": false,
+    "local_reference": "optional profile.mg_benchmark; resolve in the current user environment"
+  },
+  "excluded": "Rejected FDE exploration and short-video Oct22 V2/V3 are not positive examples"
+}

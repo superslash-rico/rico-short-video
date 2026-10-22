@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "case_id": "native-mg-portrait-2026-10-22",
+  "input_mode": "face_talking_head",
+  "duration_seconds": 108.366667,
+  "output": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "scope": [
+    "13 native MG scenes plus shared background",
+    "native caption design without wording/timing changes",
+    "real software image binding at spoken anchors",
+    "energetic instrumental BGM replacement while preserving picture"
+  ],
+  "style_acceptance": {
+    "paired_aspects": [
+      "16:9",
+      "9:16"
+    ],
+    "paired_seconds": 9.6,
+    "accepted": [
+      "paper material",
+      "spatial layering",
+      "overview/detail camera contrast"
+    ],
+    "later_applied": [
+      "remove persistent corner mark",
+      "designed native captions",
+      "opaque nonfocus paper with dots behind objects",
+      "real software icons",
+      "bright energetic music"
+    ]
+  },
+  "technical_evidence": [
+    "full decode and final-file hash",
+    "source/encoded face-color checks",
+    "unchanged caption words/times",
+    "non-BGM timeline comparison",
+    "image property change/restore and encoded output",
+    "V5/V6 picture bitstream hash equality"
+  ],
+  "quality_limits": [
+    "Technical checks do not imply independent continuous watch/listen or audience comprehension.",
+    "User confirmed publication and completion; public package contains no footage, voice or account receipts.",
+    "Mixed-mode, native transparent baking, tracking and repair remain separately unverified."
+  ],
+  "reusable_study": {
+    "source": "assets/mg-shared/TaskCapabilityStudy.jsx",
+    "properties": "assets/mg-shared/study-properties.json",
+    "duration_seconds": 9.6,
+    "canvas_sizes": [
+      [
+        1920,
+        1080
+      ],
+      [
+        1080,
+        1920
+      ]
+    ],
+    "purpose": "Study the same object identities, separate aspect layouts, paper shading and camera/object choreography; not a finished talking-head template."
+  }
+}

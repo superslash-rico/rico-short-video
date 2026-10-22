@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "id": "rico-shared-mg",
+  "version": "0.2.0",
+  "status": "paired_native_benchmark_accepted_and_portrait_full_film_delivered",
+  "source": {
+    "repository": "https://github.com/superslash-rico/course-long-video-editing",
+    "version": "1.3.0",
+    "commit": "98bc17e43843064a31d655c3a4e989502f42f7c2"
+  },
+  "scope": "Shared MG visual/craft/quality only; short-video presenter and non-MG workflows retained; long-video skill not modified by this update",
+  "visual": {
+    "fontFamily": "MiSans",
+    "background": {
+      "base": "#0C0A14",
+      "dotColor": "#B4A7C4",
+      "dotOpacity": 0.42,
+      "dotSpacing": 42,
+      "dotRadius": 1.6,
+      "glowColor": "#B989D2",
+      "glowOpacity": 0.18,
+      "glowHeight": 220
+    },
+    "text": {
+      "main": "#FFFFFF",
+      "heading": "#F4A6FF",
+      "accent": "#E802F8"
+    },
+    "paper": {
+      "surface": "#FFFFFF",
+      "secondary": "#F2E5F6",
+      "ink": "#231529",
+      "accent": "#9B22AF",
+      "edge": "#E9DEEE",
+      "thickness": "#D8C5E2",
+      "radius": 22,
+      "thicknessPx": 12,
+      "edgeWidthPx": 2,
+      "nonfocus_treatment": "opaque_surface_with_local_shade; never reduce whole-paper opacity to reveal background dots"
+    },
+    "parameter_basis": "Accepted paired 16:9/9:16 native benchmark and the following portrait full-film corrections; per-scene framing still adapts to content.",
+    "corner_brand_mark_default": false,
+    "layer_order": [
+      "base",
+      "horizontal_glow",
+      "dots",
+      "opaque_scene_objects",
+      "presenter",
+      "native_captions"
+    ]
+  },
+  "canvas": {
+    "professional_scene": "full_project_canvas",
+    "camera_and_world_overflow": "visible",
+    "internal_scene_clip": false,
+    "protected_regions": "layout_and_timing_constraints_not_masks",
+    "object_local_masks": "allowed_when_intentional"
+  },
+  "camera": {
+    "shared": "purposeful overview/detail contrast, fast settled transitions, reading holds, identity continuity",
+    "fixed_zoom_multiplier": null,
+    "fixed_transition_frames": null,
+    "time_unit": "seconds_from_actual_fps",
+    "background": "same_actual_pose_with_weaker_dot_response_and_still_weaker_halo"
+  },
+  "components": [
+    "SceneRoot.jsx",
+    "PaperSurface.jsx",
+    "geometry.js",
+    "TaskCapabilityStudy.jsx",
+    "study-properties.json"
+  ],
+  "reference_index": "references/data/mg-reference-index.json",
+  "quality": {
+    "paired_same_content_16x9_9x16_benchmark_required_initially": true,
+    "benchmark_status": "accepted_2026-10-22; paper/depth/camera with opaque-paper, no-corner-mark and caption refinements",
+    "review_at_phone_width_px": [
+      360,
+      390
+    ],
+    "V2_V3_Oct22_status": "user-rejected_quality_and_clipping_counterexamples; do_not_use_as_benchmarks",
+    "complete_native_portrait_case": "references/data/first-native-mg-case.json",
+    "private_footage_distributed": false
+  },
+  "code_provenance": {
+    "upstream": "https://github.com/Vincentwei1021/video-shotcraft",
+    "commit": "43bd349a136651865ecfa6ea1cf012f6e957d304",
+    "license": "Apache-2.0",
+    "license_file": "LICENSE-video-shotcraft.txt",
+    "adaptation": "Selected material ideas through the user long-skill derivative; new full-canvas/aspect geometry and shared contract. No historical scene content or choreography copied."
+  }
+}
