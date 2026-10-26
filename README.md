@@ -2,7 +2,7 @@
 
 为短视频制作提供可复用的协作流程：**露脸口播、手机拍屏/录屏讲解、混合模式**。ChatCut负责主剪辑、字幕、声音和最终导出，原生可编辑源码按讲述创作MG动画；成片、封面、发布准备、复盘与归档在同一流程中接续。
 
-本仓库是轻量公开分发版，当前 `main` 为 **v0.4.0 / 来源技能修订48**。它提供工作流和辅助脚本，实际视频处理需要使用者自己的工具、素材及授权。露脸与手机单源拍屏已有制作案例；混合、双源同步、稳像/去频闪和自动跟踪仍按具体素材验证。
+本仓库是轻量公开分发版，当前 `main` 为 **v0.4.1 / 来源技能修订50**。它提供工作流和辅助脚本，实际视频处理需要使用者自己的工具、素材及授权。露脸与手机单源拍屏已有制作案例；混合、双源同步、稳像/去频闪和自动跟踪仍按具体素材验证。
 
 当前版将六项剪辑经验接入下一条制作入口：自然肤色与高光、真实素材和动画表达、声画事件、转场中途检查、同源单声单字幕、模块修改及依赖归档。支持按当前实际工具优先接续ChatCut Desktop，并保留网页表面的适用方法。详见[制作入口](skills/rico-short-video/references/next-video.md)和[人像高光检查](skills/rico-short-video/references/presenter-layout.md)。
 
@@ -74,7 +74,7 @@ codex plugin marketplace upgrade rico-skills
 
 先理解讲述、设计完整场景，再精修对象的前态/变化/结果，分别编排摄影机和对象。横竖屏共享工艺与质量，分别构图、取景、避让真人；保留短视频原人物窗口和其它剪辑流程。已有认可的同内容横竖基准和完整竖屏案例；随包纯MG研究代码不含人物、音轨或真实截图。
 
-字幕继续原生可编辑，保留准确原文和时码，以字级和重点提高设计感；MG不放常驻Rico角标。提到具体软件时主动取得官方真实图标并按口播锚点融入动画。配乐默认明亮、积极、有活力的无歌词器乐，实际听口播混音，保留人声ducking。
+字幕继续原生可编辑，保留准确原文和时码，以字级和重点提高设计感；MG不放常驻Rico角标。提到具体软件时主动取得官方真实图标并按口播锚点融入动画。配乐默认明亮、积极、有活力的无歌词器乐，以低音量铺底、人声优先。混配乐前按语义段检查人声电平，特别关注重说、展示对象或姿势变化与片尾；对照原片平衡局部低录音，再实际听口播混音并检查ducking。整体响度不能代替局部听审；仅要求降低配乐时，只调整BGM及必要的衔接。
 
 详见[共享视觉与质量](skills/rico-short-video/references/mg-visual-standard.md)、[原生MG创作](skills/rico-short-video/references/animation-production.md)、[字幕设计](skills/rico-short-video/references/caption-design.md)、[配乐](skills/rico-short-video/references/audio-style.md)及[案例范围](skills/rico-short-video/references/data/first-native-mg-case.json)。第三方代码来源见[许可说明](docs/THIRD_PARTY_NOTICES.md)。长视频技能尚未被本仓库自动修改。
 
