@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "template_only": true,
+  "policy_id": "real-first-png-logic-2026-10-30",
+  "policy_hash": null,
+  "input_mode": null,
+  "canvas": {
+    "width": null,
+    "height": null,
+    "fps": null
+  },
+  "research_receipts": [],
+  "materials": [],
+  "scenes": [],
+  "receipt_template": {
+    "id": null,
+    "kind": "online|provided",
+    "query_or_inspection": null,
+    "source": null,
+    "date": null,
+    "result": "collected|unavailable|unsuitable|provided-sufficient|provided-insufficient",
+    "evidence": {
+      "file": null,
+      "sha256": null
+    }
+  },
+  "material_template": {
+    "id": null,
+    "tier": "real|generated|code",
+    "role": "evidence|illustration|identity|context|presenter|logic|label|relation",
+    "file": null,
+    "sha256": null,
+    "source": null,
+    "rights_boundary": null,
+    "availability": "collected|imported-reference|used",
+    "generation_record": null,
+    "visual_review": null,
+    "full_background_exception": null
+  },
+  "scene_template": {
+    "id": null,
+    "source_mode": null,
+    "master_range_frames": {
+      "start_inclusive": null,
+      "end_exclusive": null
+    },
+    "goal": null,
+    "presentation": "professional_mg|transparent_overlay",
+    "research_ids": [],
+    "material_ids": [],
+    "tier1_assessment": null,
+    "tier2_assessment": null,
+    "code_reason": null,
+    "composition_plan": {
+      "opening": null,
+      "focus": null,
+      "reading": null,
+      "handoff": null,
+      "spatial_treatment": null,
+      "motion_purpose": null
+    },
+    "mobile_readability_plan": null,
+    "protected_regions_reference": null,
+    "source_clock_reference": null,
+    "native_binding_evidence": null,
+    "native_preview_evidence": null,
+    "mobile_review": null
+  },
+  "final_output": null,
+  "scope": "Assistant fills actual records and sets template_only=false. Planning/file checks cannot certify actual source truth, permissions, beauty, listening or user approval."
+}

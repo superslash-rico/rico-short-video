@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-28",
+  "scope": "pure-graphic compatibility regression; no private footage, account or project identifiers",
+  "host": "ChatCut Desktop 0.8.4 local native H264 SDR export",
+  "canvas": [
+    1080,
+    1920
+  ],
+  "fps": 30,
+  "original_shared_package": "0.2.0",
+  "negative_control": {
+    "three_assets_same_pattern_id": [
+      true,
+      false,
+      false
+    ]
+  },
+  "positive_controls": {
+    "three_assets_unique_pattern_ids": [
+      true,
+      true,
+      true
+    ],
+    "explicit_svg_circles": true
+  },
+  "cause_scope": "Reused fixed SVG resource ID triggers missing dots across multiple MG assets; internal renderer/cache implementation not inspected",
+  "candidate_shared_package": "0.2.1",
+  "candidate_native_verification": {
+    "status": "passed",
+    "independent_assets": 3,
+    "instances_including_repeat": 4,
+    "dots_in_export": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "glow_reviewed": true,
+    "motion": "camera scale/focus/tilt changes from actual local seconds",
+    "runtime_item_id": "not available in validated import/placed render; explicit resourceKey property used",
+    "portrait_output": [
+      1080,
+      1920,
+      30
+    ],
+    "output_sha256": "96241e590c5f8b4acec35451902d775c08b4613b534ebe76fd11ef182548b683",
+    "geometry_cases": 45,
+    "original_missing_output_rejected_by_checker": true,
+    "landscape_native_export": "not_checked",
+    "cross_machine": "not_checked"
+  },
+  "not_claimed": [
+    "all SVG pattern unsupported",
+    "new user aesthetic approval",
+    "cross-machine verification",
+    "all host versions verified"
+  ],
+  "workflow_changes": [
+    "stable per-instance resource keys with saved overrides",
+    "explicit circle dots",
+    "actual encoded output checked per scene for dots and glow",
+    "clean reviewed ROI pixel signal check is advisory"
+  ]
+}

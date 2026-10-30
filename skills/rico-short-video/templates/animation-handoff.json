@@ -1,7 +1,7 @@
 {
-  "schema_version": 7,
+  "schema_version": 8,
   "template_only": true,
-  "usage": "由助手填写。v7补充共享视觉包/参考、完整画幅/世界/排版约束、横竖对照样段与质量证据；保留v6所有既有字段和人物/背景/屏幕/声音结构。生产清单移除scene_record_template并设置template_only=false。旧清单可读，不是工具API。",
+  "usage": "由助手填写。v8增加每实例SVG资源键及逐段实际编码的点阵/微光检查，保留v7字段。生产清单移除scene_record_template并设置template_only=false；旧清单可读，不是工具API。",
   "master": {
     "editor": "ChatCut",
     "project_id": null,
@@ -35,7 +35,7 @@
     "legacy_template_selection_reference_note": "template_selection_reference仅供旧MotionGit工程，不是新制作必填项",
     "shared_mg_standard": {
       "id": "rico-shared-mg",
-      "version": "0.1.0",
+      "version": "0.2.1",
       "manifest_reference": null,
       "component_sources_and_sha256": [],
       "reference_review_record": null,
@@ -160,7 +160,11 @@
       "protected_regions_are_layout_constraints": "not_checked",
       "shared_material_typography_and_motion_reference": "not_checked",
       "paired_aspect_ratio_benchmark": "not_checked",
-      "background_actual_camera_weak_parallax": "not_checked"
+      "background_actual_camera_weak_parallax": "not_checked",
+      "background_dots_in_actual_export": "not_checked",
+      "background_glow_in_actual_export": "not_checked",
+      "svg_resource_keys_unique_per_instance": "not_checked",
+      "material_preparation_bound_and_current": "not_checked"
     },
     "background_layers": {
       "mode": null,
@@ -241,6 +245,23 @@
       "camera_background_same_pose_evidence": [],
       "boundary_and_extrema_evidence": [],
       "user_style_and_quality_acceptance": "not_checked"
+    },
+    "background_render_review": {
+      "applicability_and_reason": null,
+      "instance_resource_keys": [],
+      "actual_export_path": null,
+      "actual_export_sha256": null,
+      "samples": [],
+      "dots_visible": "not_checked",
+      "glow_visible": "not_checked",
+      "mobile_visibility": "not_checked",
+      "review_scope_and_limitations": null
+    },
+    "material_preparation": {
+      "applicable": null,
+      "reason_if_not_applicable": null,
+      "plan_scene_id": null,
+      "current_material_ids": []
     }
   },
   "presenter_layout_conventions": {
@@ -278,7 +299,8 @@
     "reading_holds": "记录完整阅读单位、抵达/离开时刻与必要轻微运动；具体时长按实际语音和手机可读性确定",
     "same_version_manifest": "主时轴→源码/支持模块摘要→保存属性/实例覆盖→实际预览/导出→检查范围；当前绑定优先于文件夹版本号",
     "legacy": "旧模板字段保留兼容，无需给原生MG伪填模板ID、MotionGit源或烘焙文件；不适用项写原因",
-    "validation": "设计自查、存储绑定、原生合成、实际编码、连续观看、完整试听、用户审美及观众理解各记真实状态"
+    "validation": "设计自查、存储绑定、原生合成、实际编码、连续观看、完整试听、用户审美及观众理解各记真实状态",
+    "material_preparation": "Use references/material-preparation.md and material_gate.py; plan and handoff share actual scene_id, source mapping and mobile reading targets; no fake collection/generation/approval."
   },
   "shared_mg_conventions": {
     "background_modes": [
@@ -290,12 +312,23 @@
     "background_checks": "Same-time background-video/tint checks may be not_applicable for shared professional background with a reason; presenter sync and actual camera/parallax checks still apply",
     "benchmark": "Match same content in 16:9 and 9:16; do not infer aesthetic acceptance from technical success",
     "background_layering": "base/glow/dots behind opaque objects, then presenter and native captions; shade surfaces locally instead of fading paper opacity",
-    "accepted_case": "references/data/first-native-mg-case.json; reuse accepted style, validate new content and composition"
+    "accepted_case": "references/data/first-native-mg-case.json; reuse accepted style, validate new content and composition",
+    "background_output": "Each applicable scene needs actual encoded dots/glow evidence bound to the current MP4 SHA; clean ROI checks are advisory and separate from color/decoding gates."
   },
   "packaging_style": {
     "corner_brand_mark_default": false,
     "captions": "native editable, accurate wording/timing, clear hierarchy and restrained semantic emphasis",
     "music": "bright positive energetic instrumental; check actual speech mix and ducking",
     "evidence": "Record actual scope for watching, listening, technical checks and user acceptance separately"
+  },
+  "material_preparation": {
+    "policy_id": "real-first-png-logic-2026-10-30",
+    "plan": {
+      "file": null,
+      "sha256": null
+    },
+    "before_mg_check": "not_checked",
+    "delivery_check": "not_checked",
+    "scope": "New explanation scenes; unchanged/local typography-only work follows its authorized scope."
   }
 }

@@ -81,7 +81,7 @@ export default function TaskModels({item}){
  const chrome=clamp((1-ramp(t,1.65,1.88))+ramp(t,8.36,8.62));
  const resultDone=ramp(t,8.42,8.9);
  return <FullCanvas fontFamily={p.fontFamily}>
-  <SharedBackdrop camera={camera} referenceScale={referenceScale} follow={p.parallax} transparent={p.transparentBackground} profile={{...standard.visual.background,base:p.backgroundColor}}/>
+  <SharedBackdrop camera={camera} referenceScale={referenceScale} follow={p.parallax} transparent={p.transparentBackground} resourceKey={p.resourceKey} profile={{...standard.visual.background,base:p.backgroundColor}}/>
   <div style={{position:'absolute',left:portrait?54:78,top:portrait?178:96,width:portrait?972:1400,display:'flex',flexDirection:'column',gap:14,opacity:boardIntro*chrome}}>
    <div style={{color:p.accentColor,fontSize:portrait?29:24,fontWeight:600,letterSpacing:2}}>能力模型</div>
    <div style={{color:p.headingColor,fontSize:portrait?67:57,fontWeight:700,lineHeight:1.2}}>{p.title}</div>

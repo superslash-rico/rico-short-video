@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "id": "rico-shared-mg",
-  "version": "0.2.0",
-  "status": "paired_native_benchmark_accepted_and_portrait_full_film_delivered",
+  "version": "0.2.1",
+  "status": "visual_0.2.0_benchmark_retained_background_compatibility_update",
   "source": {
     "repository": "https://github.com/superslash-rico/course-long-video-editing",
     "version": "1.3.0",
@@ -88,5 +88,27 @@
     "license": "Apache-2.0",
     "license_file": "LICENSE-video-shotcraft.txt",
     "adaptation": "Selected material ideas through the user long-skill derivative; new full-canvas/aspect geometry and shared contract. No historical scene content or choreography copied."
+  },
+  "rendering": {
+    "dots": "explicit_svg_circles_without_pattern_URL",
+    "svg_resource_key": "stable_per_instance_resourceKey_required_for_glow",
+    "legacy_patternId": "explicit_alias_only_no_shared_default",
+    "verification": "see references/data/background-rendering-case.json; technical evidence is not new user aesthetic approval"
+  },
+  "material_preparation": {
+    "policy_id": "real-first-png-logic-2026-10-30",
+    "reference": "references/material-preparation.md",
+    "priority": [
+      "real-online-and-provided-media",
+      "refined-transparent-png-illustration",
+      "code-logic-relations-and-labels"
+    ],
+    "before_new_explanation_mg": true,
+    "existing_clear_screen_footage_can_satisfy_real_tier": true,
+    "short_video_presenter_and_mobile_reading_retained": true,
+    "camera_and_composition_code_is_not_third_tier_content": true,
+    "technical_gate": "scripts/material_gate.py; current plan bound to animation handoff",
+    "status": "user-confirmed requirement; new-short-film-native-aesthetic-validation-pending",
+    "method_source": "course-long-video-editing 1.8.0 material priorities, adapted to short-video source modes and mobile reading; packaged without cross-Skill runtime dependency"
   }
 }

@@ -1,0 +1,59 @@
+{
+  "local_revision": 52,
+  "date": "2026-10-30",
+  "user_requirement": "Short-video animation preparation follows real material first, refined transparent PNG second, code logic/labels third; unified MG camera, perspective/depth and video dynamics.",
+  "method_source": "User-confirmed course-long-video-editing 1.8.0 method, adapted and packaged locally without cross-Skill runtime dependency",
+  "existing_distribution_origin": "0.4.1; this local revision is not an upstream publication",
+  "changes": [
+    "Entry, next-video and actual production read material-preparation before new explanation MG",
+    "Receipts and actual file/provenance/alpha checks bound to current animation handoff",
+    "Sufficient real screen footage can pass by actual source inspection; presenter-only footage cannot replace explanatory objects",
+    "Short overlays retain real operations and need accurate focus/entry/hold/exit, not mandatory full-screen 3D",
+    "Delivery checks actual used media, current bindings, native composition and phone reading evidence",
+    "Preserve source/color, presenter, subtitles, audio, publishing, archive authorization and shared background components"
+  ],
+  "checks": [
+    {
+      "name": "test_material_gate.py",
+      "ok": true,
+      "cases": 38,
+      "scope": "Synthetic receipts, PNG pixels, source modes, policy freshness and current handoff identity only"
+    },
+    {
+      "name": "test_closeout.py",
+      "ok": true,
+      "tests": 9,
+      "scope": "Disposable filesystem archive/cleanup regressions only"
+    },
+    {
+      "name": "test_background_geometry.mjs",
+      "ok": true,
+      "viewport_cases": 45,
+      "scope": "Unchanged deterministic dot geometry/resource-key contract only"
+    },
+    {
+      "name": "verify_resources.py",
+      "ok": true,
+      "scope": "Packaged paths and references only; no private caches checked"
+    },
+    {
+      "name": "official quick_validate.py",
+      "ok": true,
+      "scope": "Actual Skill frontmatter and scaffold validation"
+    }
+  ],
+  "independent_forward_test": {
+    "initial_requests": "80s face explanation, 45s clear screen with two short overlays, local 12–15s caption correction",
+    "initial_offline_checks": 12,
+    "intended_answers_supplied": false,
+    "findings_fixed": [
+      "Handoff object frame range normalized with equivalent list form",
+      "Historical native-case status clarified vs new material-rule validation"
+    ],
+    "directed_postfix_regressions": 11,
+    "scope": "Independent offline planning plus explicit synthetic structure fixtures; no network, generation or native media actions"
+  },
+  "preserved_files": "Existing color gate/spec, presenter layout, source modes, captions, audio style, publishing, closeout code, writing style and background component source hashes match the pre-update snapshot",
+  "new_short_film_native_validation": "not-performed; next actual short film must still inspect sources, phone pixels, motion, listening and user acceptance",
+  "external_publication": "not-requested-or-performed"
+}

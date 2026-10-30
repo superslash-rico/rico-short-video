@@ -33,3 +33,27 @@ export function backgroundView(canvas,pose,{referenceScale=1,follow=true}={}){
   const dotX=(centre.x-canvas.width/2)*.055,dotY=(centre.y-canvas.height/2)*.055;
   return {dotScale,dotX,dotY,haloScale:1+(dotScale-1)*.25,haloX:dotX*.08,haloY:dotY*.08};
 }
+
+// Stable coordinates for explicit dots; include the inverse-transformed viewport.
+// This avoids SVG pattern URL references and keeps coverage during parallax.
+export function visibleDotGrid(canvas,view,spacing){
+  positive(canvas.width,'canvas.width');positive(canvas.height,'canvas.height');
+  positive(spacing,'dot spacing');positive(view.dotScale,'dot scale');
+  if(!Number.isFinite(view.dotX)||!Number.isFinite(view.dotY))throw new RangeError('dot translation');
+  const cx=canvas.width/2,cy=canvas.height/2,s=view.dotScale;
+  const x0=cx+(-view.dotX-cx)/s,x1=cx+(canvas.width-view.dotX-cx)/s;
+  const y0=cy+(-view.dotY-cy)/s,y1=cy+(canvas.height-view.dotY-cy)/s;
+  const i0=Math.floor(x0/spacing-.5)-1,i1=Math.ceil(x1/spacing-.5)+1;
+  const j0=Math.floor(y0/spacing-.5)-1,j1=Math.ceil(y1/spacing-.5)+1;
+  if((i1-i0+1)*(j1-j0+1)>20000)throw new RangeError('dot grid too dense for this component');
+  const points=[];
+  for(let j=j0;j<=j1;j++)for(let i=i0;i<=i1;i++)points.push({x:(i+.5)*spacing,y:(j+.5)*spacing,key:`${i}:${j}`});
+  return points;
+}
+
+// A stable per-instance key is supplied by the entry, never by wall clock/random.
+export function backgroundResourceId(resourceKey,role='glow'){
+  if(typeof resourceKey!=='string'||!resourceKey||!/^[A-Za-z0-9_.-]+$/.test(resourceKey))throw new TypeError('SharedBackdrop requires a stable unique resourceKey for each instance');
+  if(typeof role!=='string'||!/^[A-Za-z0-9_.-]+$/.test(role))throw new TypeError('Invalid SVG resource role');
+  return `rico-bg-${resourceKey}-${role}`;
+}

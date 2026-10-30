@@ -2,7 +2,7 @@
 
 为短视频制作提供可复用的协作流程：**露脸口播、手机拍屏/录屏讲解、混合模式**。ChatCut负责主剪辑、字幕、声音和最终导出，原生可编辑源码按讲述创作MG动画；成片、封面、发布准备、复盘与归档在同一流程中接续。
 
-本仓库是轻量公开分发版，当前 `main` 为 **v0.4.1 / 来源技能修订50**。它提供工作流和辅助脚本，实际视频处理需要使用者自己的工具、素材及授权。露脸与手机单源拍屏已有制作案例；混合、双源同步、稳像/去频闪和自动跟踪仍按具体素材验证。
+本仓库是轻量公开分发版，当前 `main` 为 **v0.5.0 / 来源技能修订52**。它提供工作流和辅助脚本，实际视频处理需要使用者自己的工具、素材及授权。露脸与手机单源拍屏已有制作案例；混合、双源同步、稳像/去频闪和自动跟踪仍按具体素材验证。
 
 当前版将六项剪辑经验接入下一条制作入口：自然肤色与高光、真实素材和动画表达、声画事件、转场中途检查、同源单声单字幕、模块修改及依赖归档。支持按当前实际工具优先接续ChatCut Desktop，并保留网页表面的适用方法。详见[制作入口](skills/rico-short-video/references/next-video.md)和[人像高光检查](skills/rico-short-video/references/presenter-layout.md)。
 
@@ -68,6 +68,14 @@ codex plugin marketplace upgrade rico-skills
 
 参考：[OpenAI技能文档](https://learn.chatgpt.com/docs/build-skills)、[插件与仓库市场](https://developers.openai.com/plugins/build/plugins)。
 
+## 动画前的素材准备
+
+固定顺序是：**真实网络/已给素材 → 精致透明PNG → 代码逻辑文字**。先理解实际讲述与操作，再按收益找真实视频、音频、照片、软件功能截图和官方图标；不足时生成帮助理解、主体完整、边缘干净的透明PNG；代码负责准确标签、逻辑和关系。代码合成与相机不属于第三级内容替代。
+
+选定素材统一在MG中呈现，围绕当前语音/事件设计镜头、透视/前后层次、视差和真实视频动态，按360–390像素宽检查阅读。已有清楚录屏可直接作为第一级，短透明提示不强制变成全屏3D或人物窗；局部字幕等任务保持原范围。
+
+素材计划与当前主分镜绑定。批量制作前检查实际检索/原片检查、来源、文件摘要、透明PNG和镜头计划；交付再核对实际使用、原生绑定、输出与手机阅读证据。检查器不代替素材真伪、许可、观看/听审或审美判断。详见[素材准备](skills/rico-short-video/references/material-preparation.md)及[本次验证范围](skills/rico-short-video/references/data/material-preparation-validation.json)。
+
 ## 当前动画与声音标准
 
 专业MG采用完整工程画幅：深紫黑`#0C0A14`、清楚而克制的点阵、中部横向淡紫微光；点阵在主体下层，弱跟随实际镜头，纸面始终不透明。用纸面材质、厚度、阴影、透视与前后关系建立空间，不添加复杂舞台或顶底遮挡带。
@@ -105,6 +113,8 @@ python3 <技能目录>/scripts/motiongit/serve_gallery.py
 python3 tools/check_public.py
 python3 -m unittest discover -s tests -v
 python3 skills/rico-short-video/scripts/test_closeout.py
+python3 skills/rico-short-video/scripts/test_material_gate.py
+node skills/rico-short-video/scripts/test_background_geometry.mjs
 ```
 
 维护者使用当前skill-creator官方校验工具检查SKILL.md。提交建议时描述问题、适用条件和可公开证据；不要提交个人包、Key、原片或内部资料。发布范围见[PUBLICATION.md](docs/PUBLICATION.md)。

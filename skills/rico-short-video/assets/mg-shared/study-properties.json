@@ -88,5 +88,11 @@
     "label": "parallax",
     "type": "boolean",
     "defaultValue": true
+  },
+  {
+    "key": "resourceKey",
+    "label": "背景资源键（生产时按实例覆盖）",
+    "type": "text",
+    "defaultValue": "mg-capability-study-preview"
   }
 ]

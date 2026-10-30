@@ -4,6 +4,8 @@
 
 ## 当前制作资源
 
+- [素材准备](material-preparation.md)、`templates/material-plan.json`及`scripts/material_gate.py`：真实材料→透明PNG→代码逻辑的自包含规则、素材台账、alpha/版本/交接覆盖检查；没有对长视频技能目录的运行依赖。既有录屏可记录实查作为第一级，具体真实身份、许可与视觉效果仍由本条实际复核。[本次验证范围](data/material-preparation-validation.json)区分离线流程/结构测试与尚未进行的新短片实拍验收。
+
 - [mg-visual-standard.md](mg-visual-standard.md)和`assets/mg-shared/standard.json`：唯一MG视觉/工艺/质量入口及共享包版本。随包SceneRoot/PaperSurface/geometry提供全画幅与同源材质起点；原生样段验收前不声称已达标。
 - [实际参考索引](data/mg-reference-index.json)和`scripts/mg_references.py`：固定源版本/SHA、认可范围、字体与许可。普通运行只定位核验；`--source-dir <含SKILL.md的长技能目录>`从本机来源复制，`--download`才取固定公共URL，缓存位于本机状态的`mg-reference-cache/`而非技能内。输出实际路径后观看图片/时序/动态、读相应代码和用途限制；不把参考人像/声音导入新片。长技能尚未自动接入共享包。
 
