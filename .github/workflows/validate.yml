@@ -17,4 +17,7 @@ jobs:
       - run: python -m unittest discover -s tests -v
       - run: python skills/rico-short-video/scripts/test_closeout.py
       - run: python skills/rico-short-video/scripts/test_material_gate.py
+      - run: python skills/rico-short-video/scripts/test_motion_gate.py
+      - run: python skills/rico-short-video/scripts/test_pacing_gate.py
+      - run: python skills/rico-short-video/scripts/verify_resources.py
       - run: node skills/rico-short-video/scripts/test_background_geometry.mjs

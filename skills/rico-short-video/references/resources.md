@@ -4,6 +4,11 @@
 
 ## 当前制作资源
 
+- [fixed-outro.md](fixed-outro.md)：本人已选D“头像对话气泡”三秒统一片尾的定位、复用和接入检查。个人照片、批准MP4、源码与音效由本机profile.outro.manifest指向，不随公共Skill分发。
+
+- [opening-hook-design.md](opening-hook-design.md)：已认可的前三秒主体保护、语义聚焦、分层短音效及回到内容的方法。
+- [motion-review.md](motion-review.md)、templates/motion-review.json与scripts/motion_gate.py：复用同一主分镜逐段记录镜头/透视/元素尺度和实际编码证据，拦截漏检及版本失配；不是自动审美或听审。
+
 - [素材准备](material-preparation.md)、`templates/material-plan.json`及`scripts/material_gate.py`：真实材料→透明PNG→代码逻辑的自包含规则、素材台账、alpha/版本/交接覆盖检查；没有对长视频技能目录的运行依赖。既有录屏可记录实查作为第一级，具体真实身份、许可与视觉效果仍由本条实际复核。[本次验证范围](data/material-preparation-validation.json)区分离线流程/结构测试与尚未进行的新短片实拍验收。
 
 - [mg-visual-standard.md](mg-visual-standard.md)和`assets/mg-shared/standard.json`：唯一MG视觉/工艺/质量入口及共享包版本。随包SceneRoot/PaperSurface/geometry提供全画幅与同源材质起点；原生样段验收前不声称已达标。

@@ -1,7 +1,7 @@
 {
-  "schema_version": 8,
+  "schema_version": 11,
   "template_only": true,
-  "usage": "由助手填写。v8增加每实例SVG资源键及逐段实际编码的点阵/微光检查，保留v7字段。生产清单移除scene_record_template并设置template_only=false；旧清单可读，不是工具API。",
+  "usage": "由助手填写。v11记录最终成片批准及发布执行/结果，Rico按本人已确认的直接发布规则执行；保留v10统一片尾与v9镜头检查。生产清单移除scene_record_template并设置template_only=false；模板本身不是授权或工具API。",
   "master": {
     "editor": "ChatCut",
     "project_id": null,
@@ -40,6 +40,37 @@
       "component_sources_and_sha256": [],
       "reference_review_record": null,
       "paired_benchmark_reference": null
+    },
+    "opening_hook": {
+      "design_reference": null,
+      "semantic_anchors_reference": null,
+      "visual_mechanism": null,
+      "sfx_events_reference": null,
+      "settle_and_handoff_reference": null,
+      "accepted_scope_reference": null
+    },
+    "fixed_outro": {
+      "preset_id": null,
+      "applies": null,
+      "override_reason": null,
+      "approved_master_file_and_sha256": null,
+      "local_manifest_reference": null,
+      "timeline_start_frame": null,
+      "duration_frames": null,
+      "mixed_sfx_included": null,
+      "audio_owner_reference": null,
+      "tail_join_and_final_frame_evidence": null,
+      "status": "not_checked"
+    },
+    "publication": {
+      "policy_reference": null,
+      "final_video_approval_record": null,
+      "approved_final_file_and_sha256": null,
+      "target_platforms_and_accounts_reference": null,
+      "publish_package_reference": null,
+      "status": "not_started",
+      "results_reference": null,
+      "convention": "For Rico, explicit final-video approval triggers direct publishing under confirmed user policy. No default second draft/final-button approval. Template values are not user authorization."
     }
   },
   "scenes": [],
@@ -164,7 +195,11 @@
       "background_dots_in_actual_export": "not_checked",
       "background_glow_in_actual_export": "not_checked",
       "svg_resource_keys_unique_per_instance": "not_checked",
-      "material_preparation_bound_and_current": "not_checked"
+      "material_preparation_bound_and_current": "not_checked",
+      "camera_motion_realization": "not_checked",
+      "perspective_and_depth_realization": "not_checked",
+      "independent_element_scale_or_lift": "not_checked",
+      "opening_av_hook_if_applicable": "not_checked"
     },
     "background_layers": {
       "mode": null,
@@ -262,7 +297,8 @@
       "reason_if_not_applicable": null,
       "plan_scene_id": null,
       "current_material_ids": []
-    }
+    },
+    "motion_review_scene_id": null
   },
   "presenter_layout_conventions": {
     "rectangles": "[x,y,width,height]相对最终画布归一化，左上为原点；源裁切另引用实际素材坐标",
@@ -300,7 +336,8 @@
     "same_version_manifest": "主时轴→源码/支持模块摘要→保存属性/实例覆盖→实际预览/导出→检查范围；当前绑定优先于文件夹版本号",
     "legacy": "旧模板字段保留兼容，无需给原生MG伪填模板ID、MotionGit源或烘焙文件；不适用项写原因",
     "validation": "设计自查、存储绑定、原生合成、实际编码、连续观看、完整试听、用户审美及观众理解各记真实状态",
-    "material_preparation": "Use references/material-preparation.md and material_gate.py; plan and handoff share actual scene_id, source mapping and mobile reading targets; no fake collection/generation/approval."
+    "material_preparation": "Use references/material-preparation.md and material_gate.py; plan and handoff share actual scene_id, source mapping and mobile reading targets; no fake collection/generation/approval.",
+    "motion_review": "references/motion-review.md and scripts/motion_gate.py; reuse same scene_id/frame range, current code/instance binding and encoded samples. Required/justified-not-applicable per dimension; no inference from CameraWorld existence."
   },
   "shared_mg_conventions": {
     "background_modes": [
@@ -330,5 +367,13 @@
     "before_mg_check": "not_checked",
     "delivery_check": "not_checked",
     "scope": "New explanation scenes; unchanged/local typography-only work follows its authorized scope."
+  },
+  "motion_review": {
+    "report": {
+      "file": null,
+      "sha256": null
+    },
+    "delivery_check": "not_checked",
+    "scope": "Opening audiovisual hook and per-scene camera/perspective/independent element-scale evidence; not user approval."
   }
 }

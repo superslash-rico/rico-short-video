@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "case_date": "2026-11-11",
+  "scope": "Rico口播及有匹配露脸内容的混合短视频",
+  "user_selected_lessons": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    8
+  ],
+  "opening": {
+    "mode": "live_scene_first",
+    "sample_fullscreen_seconds": 3.6,
+    "presenter": "保留原片背景的矩形人物窗口",
+    "sample_duration_is_fixed_default": false
+  },
+  "pacing": {
+    "target_change_seconds": 3,
+    "max_shot_seconds": 5,
+    "observed_max_shot_seconds": 4.0333333333,
+    "scope_override": "纯拍屏连续操作、必要阅读或当前用户明确要求，在任务内记录适用区间与设置"
+  },
+  "captions": {
+    "template_name": "Product Beam",
+    "language": "zh-Hans",
+    "sample_canvas": [
+      1080,
+      1920
+    ],
+    "base_font_px": 54,
+    "emphasis_font_px_range": [
+      62,
+      66
+    ],
+    "foreground": "#FFFFFF",
+    "highlight": "#A3FF12",
+    "background": "black translucent",
+    "emphasis": {
+      "duration_ms": 230,
+      "translate_y_em": [
+        0.5,
+        -0.04,
+        0
+      ],
+      "overshoot_progress": 0.72
+    },
+    "binding": "读取当前目录的实际模板ID，保存语言与有效参数",
+    "parameter_scope": "设计配方，按当前原生字幕合同映射并实测"
+  },
+  "audio": {
+    "observed_action_sfx_events": 15,
+    "default_count": null,
+    "required_record": [
+      "visual_action",
+      "spoken_anchor",
+      "master_frame",
+      "duration",
+      "gain",
+      "source_file",
+      "source_and_rights"
+    ],
+    "subjective_listening": "pending"
+  },
+  "outro": {
+    "layout": "D头像对话气泡",
+    "new_portrait_default_user_selected": true,
+    "locator": "本机profile.outro.manifest",
+    "review_scope": "头像选择与长期默认已明确，新完整成片观看验收单独记录"
+  },
+  "desktop_observations": {
+    "push_asset_duration_unit": "integer microseconds",
+    "source_in_unit": "按当前合同核对，本次为integer microseconds",
+    "timeline_ranges": "project frames, end exclusive",
+    "manage_timelines_fps_scope": "本次会影响工程各时间轴",
+    "export_fps_scope": "本次为导出参数",
+    "direct_source_crop_update": "本次edit_item未支持source.crop",
+    "require_current_contract_and_sample": true
+  },
+  "verification": {
+    "technical_output": "51.5s, 1080x1920, 30fps, SDR Rec.709",
+    "full_user_video_review": "pending",
+    "subjective_full_listen": "pending",
+    "advertising_outcome": "pending"
+  }
+}

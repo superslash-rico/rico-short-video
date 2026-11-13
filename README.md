@@ -2,9 +2,9 @@
 
 为短视频制作提供可复用的协作流程：**露脸口播、手机拍屏/录屏讲解、混合模式**。ChatCut负责主剪辑、字幕、声音和最终导出，原生可编辑源码按讲述创作MG动画；成片、封面、发布准备、复盘与归档在同一流程中接续。
 
-本仓库是轻量公开分发版，当前 `main` 为 **v0.5.0 / 来源技能修订52**。它提供工作流和辅助脚本，实际视频处理需要使用者自己的工具、素材及授权。露脸与手机单源拍屏已有制作案例；混合、双源同步、稳像/去频闪和自动跟踪仍按具体素材验证。
+本仓库是轻量公开分发版，当前 `main` 为 **v0.6.0 / 来源技能修订56**。它提供工作流和辅助脚本，实际视频处理需要使用者自己的工具、素材及授权。露脸与手机单源拍屏已有制作案例；混合、双源同步、稳像/去频闪和自动跟踪仍按具体素材验证。
 
-当前版将六项剪辑经验接入下一条制作入口：自然肤色与高光、真实素材和动画表达、声画事件、转场中途检查、同源单声单字幕、模块修改及依赖归档。支持按当前实际工具优先接续ChatCut Desktop，并保留网页表面的适用方法。详见[制作入口](skills/rico-short-video/references/next-video.md)和[人像高光检查](skills/rico-short-video/references/presenter-layout.md)。
+本版加入现场展示优先与视效钩子两种开场、口播约3秒画面变化与最长5秒镜头检查、Product Beam字幕配方、动作音效记录和D头像对话气泡片尾复用。镜头及素材关卡绑定实际输出和当前主分镜，延续肤色高光、同源单声单字幕、模块修改与依赖归档流程。详见[制作入口](skills/rico-short-video/references/next-video.md)、[开场设计](skills/rico-short-video/references/opening-hook-design.md)和[镜头检查](skills/rico-short-video/references/motion-review.md)。
 
 ## 安装
 
@@ -32,13 +32,15 @@ python3 <技能目录>/scripts/verify_resources.py
 
 助手先查看实际原片并选择模式。已有原片直接进入分析和剪辑，不倒补写稿审批。纯拍屏不强加人物窗；混合按真实覆盖区间处理，不能循环或冻结短露脸素材假装全程出镜。
 
-露脸开场默认2—3秒全幅真人；适用区间人物持续可见。缩窗/资料组合需背景时用同源视频加轻色罩。手机观看要看清真实目标；拍屏保护输入、反馈、等待、结果和解释的关系，无口播等待压缩或加速需据实标注。
+露脸开场按内容选择现场展示优先或视效钩子。现场与背后大屏承担信息时先约3秒全幅展示，再用保留背景的矩形人物窗进入动画。口播适用区间约3秒有一次有效画面变化，最长镜头5秒，纯拍屏连续操作与必要阅读在任务中记录适用节奏。缩窗/资料组合需背景时用同源视频加轻色罩。手机观看要看清真实目标，拍屏保护输入、反馈、等待、结果和解释的关系，无口播等待压缩或加速需据实标注。
 
 拍屏先按原声和操作事件剪辑，保护按钮、反馈、结果和字幕；默认用原生短透明图形辅助表达。旧MotionGit去底/VP9 alpha案例只用于历史工程恢复，不证明新方法的透明烘焙能力。设备播报与配乐、动作音效分开处理。详见[拍屏制作流程](skills/rico-short-video/references/screen-explainer.md)及[公开方法摘要](skills/rico-short-video/references/data/first-screen-case.json)。
 
 封面默认16:9、3:4、4:3分别构图，先读取已认可的系列风格。视频不露脸，也可以在实际肖像许可内设计本人封面；安装本技能不会继承维护者的肖像授权。
 
-所有平台最终发布按钮由用户自己点击，或取得对具体最终点击动作的明确授权。用户明确说任务完成后，再核验依赖、清理过程文件并归档。
+Rico本人明确审核本次最终视频通过后，助手沿用已确认的平台、本人账号和发布设置完成上传、文案封面适配、最终提交与结果核对。其他使用者按自己的明确授权执行。当前用户要求草稿、暂停或指定排期时依其范围处理。用户明确说任务完成后，再核验依赖、清理过程文件并归档。详见[发布流程](skills/rico-short-video/references/publishing.md)。
+
+Rico已选D头像对话气泡作为统一三秒片尾。复用时读取本机profile中的默认母版并核对摘要、取景、声音和总时长。个人照片与片尾视频由本人本机保存，安装用户按自身素材与许可处理。详见[片尾复用](skills/rico-short-video/references/fixed-outro.md)。
 
 ## 更新给同事
 
@@ -114,6 +116,9 @@ python3 tools/check_public.py
 python3 -m unittest discover -s tests -v
 python3 skills/rico-short-video/scripts/test_closeout.py
 python3 skills/rico-short-video/scripts/test_material_gate.py
+python3 skills/rico-short-video/scripts/test_motion_gate.py
+python3 skills/rico-short-video/scripts/test_pacing_gate.py
+python3 skills/rico-short-video/scripts/verify_resources.py
 node skills/rico-short-video/scripts/test_background_geometry.mjs
 ```
 

@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "template_only": true,
+  "output": {
+    "file": null,
+    "sha256": null,
+    "canvas_size": null,
+    "fps": null
+  },
+  "opening": {
+    "decision": null,
+    "purpose_or_reason": null,
+    "range_frames": null,
+    "visual_mechanism": null,
+    "semantic_events": [],
+    "sfx_events": [],
+    "mix_preview": {
+      "file": null,
+      "sha256": null
+    },
+    "checks": {
+      "subject_and_semantic_readability": "not_checked",
+      "visual_extrema_and_edges": "not_checked",
+      "settle_and_handoff": "not_checked"
+    },
+    "audition": {
+      "status": "not_checked",
+      "scope": null,
+      "finding": null
+    },
+    "binding_evidence": {
+      "file": null,
+      "sha256": null
+    },
+    "source_files": [],
+    "frame_samples": [],
+    "settle_frame": null,
+    "unchanged_approved_reference": null
+  },
+  "scenes": [
+    {
+      "scene_id": null,
+      "master_range_frames": {
+        "start_inclusive": null,
+        "end_exclusive": null
+      },
+      "source_files": [],
+      "binding_evidence": {
+        "file": null,
+        "sha256": null
+      },
+      "samples": [],
+      "camera": {
+        "decision": null,
+        "purpose_or_reason": null,
+        "mechanism": null,
+        "state_kind": "motion",
+        "status": "not_checked",
+        "finding": null,
+        "sample_ids": [],
+        "state_units": null,
+        "states": [],
+        "visible_change": "not_checked",
+        "transform_space": null,
+        "object_id": null
+      },
+      "perspective": {
+        "decision": null,
+        "purpose_or_reason": null,
+        "mechanism": null,
+        "state_kind": "motion",
+        "status": "not_checked",
+        "finding": null,
+        "sample_ids": [],
+        "state_units": null,
+        "states": [],
+        "visible_change": "not_checked",
+        "transform_space": null,
+        "object_id": null
+      },
+      "element_scale": {
+        "decision": null,
+        "purpose_or_reason": null,
+        "mechanism": null,
+        "state_kind": "motion",
+        "status": "not_checked",
+        "finding": null,
+        "sample_ids": [],
+        "state_units": null,
+        "states": [],
+        "visible_change": "not_checked",
+        "transform_space": null,
+        "object_id": null
+      },
+      "checks": {
+        "mobile_readability": {
+          "status": "not_checked",
+          "finding": null
+        },
+        "occlusion_and_extrema": {
+          "status": "not_checked",
+          "finding": null
+        },
+        "adjacent_handoff": {
+          "status": "not_checked",
+          "finding": null
+        }
+      }
+    }
+  ],
+  "sample_template": {
+    "id": null,
+    "master_frame": null,
+    "phase": null,
+    "origin": "encoded_output",
+    "file": null,
+    "sha256": null
+  },
+  "state_template": {
+    "sample_id": null,
+    "values": []
+  },
+  "semantic_event_template": {
+    "master_frame": null,
+    "spoken_anchor": null,
+    "visual_action": null
+  },
+  "sfx_event_template": {
+    "master_frame": null,
+    "role": null,
+    "source": null,
+    "rights": null,
+    "file": null,
+    "sha256": null
+  },
+  "scope": "Assistant fills actual records. Evidence/coverage checks do not certify pixels, listening, aesthetics or user approval."
+}

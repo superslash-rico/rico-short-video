@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "accepted_on": "2026-11-02",
+  "accepted_scope": [
+    "first-three-seconds visual/SFX method",
+    "six body scenes with camera, perspective and independent scale/lift"
+  ],
+  "opening": {
+    "subject": "synchronous live presenter, protected centre",
+    "visual": "peripheral diagonal slices regroup; first push and semantic second push/recoil; settle into narration",
+    "text": "native timed captions with semantic extruded keywords",
+    "sound": "short anticipation, motion, primary landing and optional UI cue, voice-first mix",
+    "illustrative_peak_scales": [
+      1.15,
+      1.245
+    ],
+    "illustrative_return_seconds": 2.84,
+    "fixed_recipe": false
+  },
+  "body": {
+    "camera": "overall/detail/result with purposeful focus, push/pull and tilt",
+    "perspective": "2.5D opaque paper with consistent projection/shading/overlap",
+    "element": "independent object lift/size change; conclusion lifted/enlarged while camera pulls back"
+  },
+  "failure_corrected": [
+    "Camera component existed but camera was static or imperceptibly scaled",
+    "Foreground lift hid shared-pool header in return view; repositioned into clear space",
+    "Pullback reduced conclusion size; enlarged/lifted conclusion independently"
+  ],
+  "evidence_scope": "Actual native bindings, sampled encoded sequences, mobile composites and user acceptance; private project files stay in task directory",
+  "not_claimed": [
+    "measured audience retention",
+    "all-platform performance",
+    "true 3D orbit",
+    "fixed gain or universal camera ratio"
+  ]
+}
