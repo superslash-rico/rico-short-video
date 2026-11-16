@@ -20,7 +20,8 @@
 - [caption-design.md](caption-design.md)与[audio-style.md](audio-style.md)：原生字幕的设计层次、积极配乐与仅换音乐的修改范围。
 - [纯MG研究场景](../assets/mg-shared/TaskCapabilityStudy.jsx)及[属性](../assets/mg-shared/study-properties.json)：已认可横竖基准的去人像/去音轨代码研究；项目本机profile可另记私人样段路径，公共安装不包含私人影片。
 - `references/writing/`及`scripts/measure_script.py`：Rico表达方法和时长参考，不包含原课程字幕、私有文件清单或声纹。
-- `references/data/platform-fields.json`：已去除账号和草稿信息的历史字段观察，发布前仍核对当前后台。
+- [publishing.md](publishing.md)：发布包准备，以及先检测、缺失先安装、再调用独立 `yixiaoer` 技能的交接入口；蚁小二的实际发布文档和实现不随本技能复制。
+- `references/data/platform-fields.json`：已去除账号和草稿信息的历史浏览器字段观察，仅作带日期的参考；当前发布以独立蚁小二技能的实际契约为准。
 - `references/data/course-catalog.json`：无课程内容的结构示例；实际课程、会员权益由使用者提供并确认。
 - 原有色彩、字幕、人物、发布与归档参考及脚本继续使用；无需因新动画方法安装第二套整片剪辑环境。
 
